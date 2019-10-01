@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CHI TIẾT SẢN PHẨM PHÒNG KHÁCH</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/chitietgoispphongkhach.css" rel="stylesheet">
+	<link href="css/fontawesome-free-5.8.2-web/css/all.css" rel="stylesheet">
+	
+	<link href="css/csschung.css" rel="stylesheet">
+	<link href="css/productpage.css" rel="stylesheet">
+	<!-- jQuery  --> 
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<script src="js/bootstrap.js"></script>
+	
+	<script>
+		function openCT(evt, ctName){
+			var i, tabchitiet, tabct;
+			tabchitiet = document.getElementsByClassName("tabchitiet");
+			for (i = 0; i < tabchitiet.length; i++) {
+				tabchitiet[i].style.display = "none";
+			}
+				tabct = document.getElementsByClassName("tabct");
+			for (i = 0; i < tabct.length; i++) {
+				tabct[i].className = tabct[i].className.replace(" active", "");
+			}
+			document.getElementById(ctName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+		
+	</script>
+	
+	<!--Navi-->
+	<!--font-->
+	 <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Charm&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+	
+	<!--jquery-->
+	  <script>
+		  $(document).ready(function(){
+			  
+			  	$('#chitietnoithat').show();
+			  
+				$('#blackscreen').hide();
+				$('#menuxoxuong ul').hide();
+				$('#hovervechungtoi').click(function(){
+					$('#menuxoxuong ul').slideToggle();
+					$('#blackscreen').fadeToggle();
+				})
+				$('#blackscreen').click(function(){
+					$('#menuxoxuong ul').slideUp();
+					$('#blackscreen').fadeOut();
+				})
+			})
+
+		  $(document).ready(function(){
+			  $('#smxsnavi ul').hide();
+			  $('#blackscreenforthreeline').hide();
+			  $('#threelineicon').click(function(){
+				  $('#alignsearchfillsmxsproductpage input').slideUp();
+				  $('#blackscreenforsearchfillsmxs').fadeOut();
+				  $('#smxsnavi ul').slideToggle();
+				  $('#blackscreenforthreeline').fadeToggle();
+			  })
+			  $('#blackscreenforthreeline').click(function(){
+				  $('#smxsnavi ul').slideUp();
+				  $('#blackscreenforthreeline').fadeOut();
+			  })
+		  })
+
+		  $(document).ready(function(){
+				$('#searchfillsmxs').keypress(function(event){
+					let hidebox = document.getElementById('searchfillsmxs');
+					var keycode = (event.keyCode ? event.keyCode : event.which);
+					if( keycode == '13') {
+						$('#blackscreenforsearchfillsmxs').fadeOut();
+						$('#searchfillsmxs').fadeOut();
+						hidebox.value = '';
+					}
+				})
+			})
+
+		   $(document).ready(function(){
+			  $('#alignsearchfillsmxsproductpage input').hide();
+			  $('#blackscreenforsearchfillsmxs').hide();
+			  $('#searchbtnsmxs').click(function(){
+				  $('#smxsnavi ul').slideUp();
+				  $('#blackscreenforthreeline').fadeOut();
+				  $('#alignsearchfillsmxsproductpage input').slideToggle();
+				  $('#blackscreenforsearchfillsmxs').fadeToggle();
+			  })
+			  $('#blackscreenforsearchfillsmxs').click(function(){
+				  $('#alignsearchfillsmxsproductpage input').slideUp();
+				  $('#blackscreenforsearchfillsmxs').fadeOut();
+			  })
+		  })
+		   
+		   $(document).ready(function(){
+				   $('.owl-carousel').owlCarousel({
+					   dots: false,
+					   loop: true,
+					   autoplay: true,
+					   autoplayTimeout: 3000,
+					   autoplayHoverPause: true,
+					   smartSpeed: 1000,
+					   responsiveClass: true,
+					   responsive:{
+						   0:{
+							   items: 2,
+						   },
+						   768:{
+							   items:2,
+						   },
+						   992:{
+							   items:4,
+						   }
+					   }
+				   });
+
+			   });
+			$(document).ready(function(){
+				$('#filterdetailxs').hide()
+				$('#filterbtnxs').click(function(){
+				 $('#filterdetailxs').slideToggle();  
+				})
+				$('#fltbtn').click(function(){
+					$('#filterdetailxs').slideUp();
+				})
+			})
+
+	  </script>
+  </head>
+  <body>
+	
+	<!--HEADER-->
+		<div id="blackscreen"></div>
+		<div id="blackscreenforthreeline"></div>
+		<div id="blackscreenforsearchfillsmxs"></div>
+	<!-- Navi -->
+      	<div class="container-fluid" id="naviproductpage">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-2 visible-lg
+							  col-md-2 visible-md logonaviproduct">
+                      <a href="../../Tâm/untitled folder/projectweb/index.html"><img src="img/logo.png" alt="logo" class="img-responsive"></a>
+                  </div>
+                  <!--Logo-->
+                  <div class="col-lg-7 visible-lg
+							  col-md-6 visible-md" id="navi">
+                      <ul>
+					  	<li><a id="hovervechungtoi">Về chúng tôi &nbsp;<i class="fas fa-angle-down"></i></a></li><!--Thêm menu xo xuong-->
+						<li><a href="phongkhach.html">Phòng khách</a></li>
+						<li><a href="../../Bảo/funiture/phongan.html">Phòng ăn</a></li>
+						<li><a href="../../Anh/demo/Phòng ngủ.html">Phòng ngủ</a></li>
+					  </ul>
+                  </div><!--Navi lg md-->
+                  <div class="col-sm-1 visible-sm
+                              col-xs-1 visible-xs" id="threelineicon">
+                      <a><i class="fas fa-bars"></i></a>
+                  </div><!--threelineicon sm xs-->
+                   <div class="col-sm-2 col-sm-offset-4 visible-sm
+							  col-xs-4 col-xs-offset-3 visible-xs logo">
+                      <a href="../../Tâm/untitled folder/projectweb/index.html"><img src="img/logo.png" alt="logo" class="img-responsive"></a>
+                  </div>
+                  <!--Logo sm xs-->
+                  
+                  <div class="col-lg-3 visible-lg
+							  col-md-4 visible-md" id="searchbox">
+                      <input type="search" name="search" value="" placeholder="Tìm Kiếm" id="searchfill">
+					<a href=""><button class="searchbtn"><i class="fas fa-search"></i></button></a>
+					  <a href="../../Bảo/funiture/login.html" class="usericon"><i class="fas fa-user"></i></a>
+					  <a href="" class="carticon"><i class="fas fa-shopping-cart"></i></a>
+                  </div><!--Search box, cart, dang nhap-->
+                   <div class="col-sm-5 visible-sm
+							  col-xs-4 visible-xs" id="searchboxsmxs">
+                       <a href="" class="carticon"><i class="fas fa-shopping-cart"></i></a>
+                       <a href="../../Bảo/funiture/login.html" class="usericon"><i class="fas fa-user"></i></a>
+                       <a id="searchbtnsmxs"><label for="searchfillsmxs" class="searchbtn" style="margin-top: 0px;"><i class="fas fa-search"></i></label></a>
+                  </div><!--Search box, cart, dang nhap SM XS-->
+              </div>
+              <div class="row">
+                  <div class="col-sm-12 visible-sm
+                              col-xs-12 visible-xs" id="alignsearchfillsmxsproductpage">
+                      <input type="search" name="search" placeholder="Tìm Kiếm" id="searchfillsmxsproductpage">
+                  </div>
+              </div><!--Searchfill smxs-->
+              <div class="row" >
+				    <div class="col-sm-12 visible-sm
+				                col-xs-12 visible-xs" id="smxsnavi">
+					       <ul>
+						      <li><a href="phongkhach.html" style="color: black;">Phòng khách</a></li>
+						      <li><a href="../../Bảo/funiture/phongan.html" style="color: black;">Phòng ăn</a></li>
+						      <li><a href="../../Anh/demo/Phòng ngủ.html" style="color: black;">Phòng ngủ</a></li>
+						      <li><a href="../../Bảo/funiture/Chungtoilaai.html" style="color: black;">Chúng tôi là ai?</a></li>
+						      <li><a href="" style="color: black;">Tuyển dụng</a></li>
+                              <li><a href="../../Tâm/untitled folder/projectweb/hoptac.html" style="color: black;">Hợp tác kinh doanh</a></li>
+                              <li><a href="../../Anh/demo/Hệ thống cửa hàng.html" style="color: black;">Hệ thống cửa hàng</a></li>
+					       </ul>
+				    </div>
+			     </div><!--smxsnavi-->
+              <div class="row">
+                  <div class="col-lg-4 col-lg-offset-2 visible-lg
+                              col-md-4 col-md-offset-2 visible-md" id="menuxoxuong">
+                      <div class="row">
+                          <div class="col-lg-6
+                                      col-md-6">
+                               <ul>
+                                  <li><a href="../../Bảo/funiture/Chungtoilaai.html">Chúng tôi là ai?</a></li>
+                                  <li><a href="">Tuyển dụng</a></li>
+                               </ul>
+                          </div>
+                          <div class="col-lg-6
+                                      col-md-6">
+                               <ul>
+                                  <li><a href="../../Tâm/untitled folder/projectweb/hoptac.html">Hợp tác kinh doanh</a></li>
+                                  <li><a href="../../Anh/demo/Hệ thống cửa hàng.html">Hệ thống cửa hàng</a></li>
+                               </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      	</div><!--end header-->
+	
+	
+	<!--CONTENT-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12
+							col-md-12
+							col-sm-12
+							col-xs-12" id="ctchitietspPK">
+					<p class="titlesp">MẪU THIẾT KẾ TỐI GIẢN (MS: 1155371)</p>
+				</div>
+			</div>
+		</div><!--content-->
+	
+	<!--BANNER-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12
+							col-md-12
+							col-sm-12
+							col-xs-12" id="bannerctspPK">
+					<img src="img/sanphamPK5_.jpg" class="img-responsive bannerctspPK">
+				</div>
+			</div>
+		</div>
+	
+	<!--CONTENT 2-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12
+							col-md-12
+							col-sm-12
+							col-xs-12" id="ctchitietspPK2">
+					<p class="titlesp2">VẬT PHẨM TRONG PHÒNG</p>
+				</div>
+			</div>
+		</div><!--content-->
+	
+	<!--CHI TIET SẢN PHẨM PHÒNG KHÁCH-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12
+			  				col-md-12
+			  				col-sm-12
+			  				col-xs-12 tabctspPK">
+				  <button class="tabct" onclick="openCT(event, 'chitietnoithat')" id="ctnt">Chi tiết nội thất</button>
+				  <button class="tabct" onclick="openCT(event, 'cnkh')">Cảm nhận khách hàng</button>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-12
+							col-md-12
+							col-sm-12
+							col-xs-12 tabchitiet" id="chitietnoithat">
+					<div class="col-lg-3 col-lg-offset-1
+								col-md-3 col-md-offset-1
+								col-sm-4
+								col-xs-6" id="ctsanphamPK">
+						<h4>SẢN PHẨM</h4>
+						<a href="detailsdenPK.html"><img src="img/ChitietSPPK1.jpg" class="img-thumbnail imgchitietnt"></a>
+						<a href="detailsdenPK.html"><img src="img/ChitietPk2.jpg" class="img-thumbnail imgchitietnt"></a>
+						<a href="detailsdenPK.html"><img src="img/ChitietSPPK2.jpg" class="img-thumbnail imgchitietnt"></a>
+						<a href="detailsdenPK.html"><img src="img/ChitietSPPK3.jpg" class="img-thumbnail imgchitietnt"></a>
+					</div>
+					<div class="col-lg-3 col-lg-offset-1
+								col-md-3 col-md-offset-1
+								col-sm-4
+								col-xs-6" id="thongtinspgia">
+						<h4>THÔNG TIN & GIÁ</h4>
+						<div class="col-lg-12
+									col-md-12
+									col-sm-12
+									col-xs-12 thongtinsp">
+							<p class="titlectsp">Augustine Cotton Throw</p>
+							<p class="reviewsp">Chất liệu: Cotton.</p>
+							<p class="reviewsp">Kỹ thuật: Dệt.</p>
+							<h3>2.700.000 VND</h3>
+						</div>
+						<div class="col-lg-12
+									col-md-12
+									col-sm-12
+									col-xs-12 thongtinsp">
+							<p class="titlectsp">Sofa</p>
+							<p class="reviewsp">Chiều cao: 34''.</p>
+							<p class="reviewsp">Chiều rộng: 81.5''.</p>
+							<h3>11.700.000 VND</h3>
+						</div>
+						<div class="col-lg-12
+									col-md-12
+									col-sm-12
+									col-xs-12 thongtinsp">
+							<p class="titlectsp">Gilfillan 1-Light Swing Arm Lamp</p>
+							<p class="reviewsp">Vật liệu: Kim loại.</p>
+							<p class="reviewsp">Điều chỉnh độ sáng: Có.</p>
+							<h3>1.750.000 VND</h3>
+						</div>
+						<div class="col-lg-12
+									col-md-12
+									col-sm-12
+									col-xs-12 thongtinsp">
+							<p class="titlectsp">Boston Fern Desktop Plant in Planter</p>
+							<p class="reviewsp">Vật liệu: Lá dương sĩ.</p>
+							<p class="reviewsp">Vật liệu: Chậu sứ.</p>
+							<h3>1.700.000 VND</h3>
+						</div>
+					</div>
+					<div class="col-lg-4
+								col-md-4
+								col-sm-4
+								col-xs-12" id="tongtienspPK">
+						<h4>TỔNG TIỀN</h4>
+						<div class="col-lg-12
+									col-md-12
+									col-sm-12
+									col-xs-12 tongtien">
+							<p class="tttt">Tổng giá tiền bộ sản phẩm nội thất:</p>
+							<p class="tgia">17.850.000 VND</p>
+							<p class="ttbh">GIẢM GIÁ 20% KHI QUÝ KHÁCH HÀNG ĐẶT TRỌN BỘ THIẾT KẾ</p>
+							<p class="ttbh">GIAO HÀNG NHANH TRÊN TOÀN QUỐC & MIỄN PHÍ LẮP ĐẶT</p>
+							<p class="ttbh">BẢO HÀNH 2 NĂM & TẬN NƠI</p>
+
+							<a href=""><button class="btndnPK">
+							<p class="noidungPKbtn">ĐẶT NGAY</p>
+							</button></a>
+
+							<a href=""><button class="btnsdtPK">
+							<p class="noidungPKbtn">(028) 3245 7367</p>
+							<p class="slg">Hotline tư vấn khách hàng miễn phí</p>
+							</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-12
+							col-md-12
+							col-sm-12
+							col-xs-12 tabchitiet" id="cnkh">
+					<div class="col-lg-12
+								col-md-12
+								col-sm-12
+								col-xs-12 khungbinhluan">
+						<p class="binhluanPK">Cảm nhận sản phẩm của khách hàng:</p>
+						<input class="textbinhluan" type="text" placeholder="Review sản phẩm.......">
+						
+						<a href=""><button class="btnbinhluan">
+							<p class="ttbinhluan">Bình luận</p>
+						</button></a>
+						<hr class="hrbl">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	
+	<!--FOOTER-->
+        <div class="container-fluid" id="footer">
+		    <div class="container">
+			    <div class="row">	
+				    <div class="col-lg-4 col-lg-offset-0
+				    			col-md-4 col-md-offset-0
+				    			col-sm-4 col-sm-offset-0
+				    			col-xs-6 col-xs-offset-3" id="houzzlg">
+					    <a href="../../Tâm/untitled folder/projectweb/index.html"><img src="img/logo.png" alt="logo" class="img-responsive"></a>
+				    </div>
+				    <div class="col-lg-7 col-lg-offset-1
+				    			col-md-7 col-md-offset-1
+								col-sm-7 col-sm-offset-1
+								col-xs-12" id="subcribe">
+					    <span id="subcribenow">Đăng ký để nhận thông tin sớm nhất</span>
+						<div class="col-lg-8
+									col-md-8
+									col-sm-8
+									col-xs-8" id="subcribebar">
+							<input type="text" name="email" value="" id="emailbar" placeholder="Email...">
+						</div>
+						<div class="col-lg-4
+									col-md-4
+									col-sm-4
+									col-xs-4" id="subbtn">
+							<a href=""><button id="subscribebtn">Đăng ký</button></a>
+						</div>
+				    </div>
+			    </div>
+			
+			<div class="row">
+				
+				<div class="col-lg-5
+							col-md-5
+							col-sm-5
+							col-xs-12" id="contact">
+					<div class="row">
+						<ul>
+							<li><i class="far fa-envelope"></i><span class="ft">&nbsp &nbsp Email: info@houzz.com</span></li>
+							<li><i class="fas fa-phone-volume"></i><span>&nbsp &nbsp &nbspĐiện thoại: (028) 3245 7367</span></li>
+							<li><i class="fas fa-map-marked-alt"></i><span>&nbsp &nbsp Địa chỉ: 165 Nguyễn Văn A, phường B, quận C, TP.HCM</span></li>
+							<li><i class="far fa-clock"></i><span>&nbsp &nbsp Giờ làm việc: 7:30 - 11:30 ; 13:00 - 18:00 mỗi ngày</span></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-lg-offset-1
+							col-md-3 col-md-offset-1
+							col-sm-3 col-sm-offset-1
+							col-xs-6" id="vct">
+					<span class="gold"><b>Về chúng tôi</b></span>
+					<ul>
+						<li><a href="../../Bảo/funiture/Chungtoilaai.html">Chúng tôi là ai ?</a></li>
+						<li><a href="">Tuyển dụng</a></li>
+						<li><a href="../../Tâm/untitled folder/projectweb/hoptac.html">Hợp tác kinh doanh</a></li>
+						<li><a href="../../Anh/demo/Hệ thống cửa hàng.html">Hệ thống cửa hàng</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-lg-3
+							col-md-3
+							col-sm-3
+							col-xs-6" id="dk">
+					<span class="gold"><b>Điều khoản</b></span>
+					<ul>
+						<li><a href="../../Bảo/funiture/chinhsachriengtu.html">Chính sách riêng tư</a></li>
+						<li><a href="Vanchuyengiaohang.html">Vận chuyển</a></li>
+						<li><a href="../../Anh/demo/Hỗ trợ khách hàng.html">Hỗ trợ khách hàng</a></li>
+						<li><a href="">Bán lẻ</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-4
+							col-md-4 col-md-offset-4
+							col-sm-4 col-sm-offset-4
+							col-xs-6 col-xs-offset-3" id="socialicon">
+					<ul>
+						<li><a href=""><span><i class="fab fa-facebook-square"></i></span></a></li>
+						
+						<li><a href=""><span><i class="fab fa-instagram"></i></span></a></li>
+						
+						<li><a href=""><span><i class="fab fa-twitter-square"></i></span></a></li>
+						
+						<li><a href=""><span><i class="fab fa-youtube-square"></i></span></a></li>
+					</ul>
+				</div>
+				
+				
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3
+							col-md-6 col-md-offset-3
+							col-sm-6 col-sm-offset-3" id="copyright">
+					<span>© 2019 Bản quyền thuộc công ty Houzz</span>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	
+	
+	
+  </body>
+</html>

@@ -1,0 +1,948 @@
+@charset "utf-8";
+
+/* ONLY LARGE */
+@media (min-width:1200px){
+	.bannerctspPK{
+		height: 700px;
+		width: 100%;
+	}
+	
+	.tabchitiet{
+		padding: 0px;
+	}
+	
+	#ctchitietspPK{
+		height: 80px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	
+	.titlesp{
+		font-size: 32pt;
+		text-align: left;
+		color: #d3a13a;
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
+	
+	#ctchitietspPK2{
+		height: 60px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	
+	.titlesp2{
+		font-size: 26pt;
+		text-align: center;
+		color: #d3a13a;
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
+	
+	#ctsanphamPK{
+		height: 1200px;
+	}
+	
+	.imgchitietnt{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	h4{
+		text-align: center;
+		display: block;
+		height: 25px;
+		padding-top: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		color: #d3a13a;
+	}
+	
+	#thongtinspgia{
+		height: 1200px;
+	}
+	
+	.thongtinsp{
+		height: 262.5px;
+		width: 262.5px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	.titlectsp{
+		font-size: 18pt;
+		font-weight: bold;
+		text-align: left;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	
+	h3{
+		font-weight: bold;
+		color: #d3a13a;
+		margin-left: 10px;
+		margin-top: 20px;
+	}
+	
+	#tongtienspPK{
+		height: 600px;
+	}
+	
+	.tttt{
+		font-size: 14pt;
+		font-weight: bold;
+		margin-left: 5px;
+		margin-top: 20px;
+		margin-bottom: 5px;
+	}
+	
+	.tgia{
+		font-size: 24pt;
+		font-weight: bold;
+		color: #d3a13a;
+		margin-left: 5px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	
+	.ttbh{
+		font-size: 14pt;
+		font-weight: bold;
+		color: #FF0004;
+		margin-left: 5px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	
+	.btndnPK{
+		width: 95%;
+		height: 55px;
+		border: none;
+		background-color: #d3a13a;
+		border-radius: 3px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 10px;
+	}
+	
+	.noidungPKbtn{
+		font-size: 21pt;
+		text-align: center;
+		color: #FFFFFF;
+		margin: 0px;
+	}
+	
+	.btnsdtPK{
+		width: 95%;
+		height: 70px;
+		border: none;
+		background-color: #d3a13a;
+		border-radius: 3px;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+	
+	.slg{
+		font-size: 10pt;
+		color: #FFFFFF;
+		margin: 0px;
+		text-align: center;
+	}
+	
+	.tabctspPK{
+	  	overflow: hidden;
+	}
+
+	.tabctspPK button{
+	  	float: left;
+	  	border: none;
+	  	outline: none;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		padding-right: 16px;
+		padding-left: 16px;
+	  	transition: all ease 0.5s;
+		background-color: #f1f1f1;
+	}
+
+	.tabctspPK button:hover{
+	  	background-color: #d3a13a;
+		color: #FFFFFF;
+		transition: all ease 0.5s;
+	}
+
+	.tabctspPK button.active {
+	  	background-color: #CCCCCC;
+		transition: all ease 0.5s;
+	}
+	
+	.tabchitiet {
+	  	display: none;
+	}
+	
+	.khungbinhluan{
+		height: 700px;
+		width: 100%;
+	}
+	
+	.binhluanPK{
+		font-size: 16px;
+		text-align: left;
+		margin-left: 10px;
+		font-weight: bold;
+		margin-top: 20px;
+	}
+	
+	.textbinhluan{
+		font-size: 16pt;
+		height: 60px;
+		padding-left: 5px;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: solid 2px;
+		border-radius: 3px;
+	}
+	
+	.btnbinhluan{
+		height: 30px;
+		width: 10%;
+		float: right;
+		display: block;
+		border-radius: 3px;
+		border: none;
+		background-color: #d3a13a;
+	}
+	
+	.ttbinhluan{
+		font-size: 12pt;
+		margin-bottom: 0px;
+		color: #FFFFFF;
+	}
+	
+	.reviewsp{
+		font-size: 12pt;
+		font-weight: bold;
+		margin-left: 10px;
+	}
+	
+	.hrbl{
+		border: solid 1px #d3a13a;
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+
+	
+}
+/*-------------------------------------------*/
+
+
+/* ONLY MEDIUM */
+@media (min-width:992px) and (max-width:1199px){
+	.bannerctspPK{
+		height: 700px;
+		width: 100%;
+	}
+	
+	.tabchitiet{
+		padding: 0px;
+	}
+	
+	#ctchitietspPK{
+		height: 80px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	
+	.titlesp{
+		font-size: 32pt;
+		text-align: left;
+		color: #d3a13a;
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
+	
+	#ctchitietspPK2{
+		height: 60px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	
+	.titlesp2{
+		font-size: 26pt;
+		text-align: center;
+		color: #d3a13a;
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
+	
+	#ctsanphamPK{
+		height: 1000px;
+	}
+	
+	.imgchitietnt{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	h4{
+		text-align: center;
+		display: block;
+		height: 25px;
+		padding-top: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		color: #d3a13a;
+	}
+	
+	#thongtinspgia{
+		height: 1000px;
+	}
+	
+	.thongtinsp{
+		height: 212.5px;
+		width: 212.5px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	.titlectsp{
+		font-size: 14pt;
+		font-weight: bold;
+		text-align: left;
+		margin-left: 10px;
+		margin-top: 5px;
+	}
+	
+	h3{
+		font-weight: bold;
+		color: #d3a13a;
+		margin-left: 10px;
+		margin-top: 20px;
+	}
+	
+	#tongtienspPK{
+		height: 650px;
+	}
+	
+	.tttt{
+		font-size: 12pt;
+		font-weight: bold;
+		margin-left: 5px;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	
+	.tgia{
+		font-size: 24pt;
+		font-weight: bold;
+		color: #d3a13a;
+		margin-left: 5px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	
+	.ttbh{
+		font-size: 14pt;
+		font-weight: bold;
+		color: #FF0004;
+		margin-left: 5px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	
+	.btndnPK{
+		width: 95%;
+		height: 55px;
+		border: none;
+		background-color: #d3a13a;
+		border-radius: 3px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 5px;
+	}
+	
+	.noidungPKbtn{
+		font-size: 21pt;
+		text-align: center;
+		color: #FFFFFF;
+		margin: 0px;
+	}
+	
+	.btnsdtPK{
+		width: 95%;
+		height: 70px;
+		border: none;
+		background-color: #d3a13a;
+		border-radius: 3px;
+		margin-top: 10px;
+		margin-left: 5px;
+	}
+	
+	.slg{
+		font-size: 10pt;
+		color: #FFFFFF;
+		margin: 0px;
+		text-align: center;
+	}
+	
+	.tabctspPK{
+	  	overflow: hidden;
+	}
+
+	.tabctspPK button{
+	  	float: left;
+	  	border: none;
+	  	outline: none;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		padding-right: 16px;
+		padding-left: 16px;
+	  	transition: all ease 0.5s;
+		background-color: #f1f1f1;
+	}
+
+	.tabctspPK button:hover{
+	  	background-color: #d3a13a;
+		color: #FFFFFF;
+		transition: all ease 0.5s;
+	}
+
+	.tabctspPK button.active {
+	  	background-color: #ccc;
+		transition: all ease 0.5s;
+	}
+	
+	.tabchitiet {
+	  	display: none;
+	}
+	
+	.khungbinhluan{
+		height: 700px;
+		width: 100%;
+	}
+	
+	.binhluanPK{
+		font-size: 16px;
+		text-align: left;
+		margin-left: 10px;
+		font-weight: bold;
+		margin-top: 20px;
+	}
+	
+	.textbinhluan{
+		font-size: 16pt;
+		height: 60px;
+		padding-left: 5px;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: solid 2px;
+		border-radius: 3px;
+	}
+	
+	.btnbinhluan{
+		height: 30px;
+		width: 10%;
+		float: right;
+		display: block;
+		border-radius: 3px;
+		border: none;
+		background-color: #d3a13a;
+	}
+	
+	.ttbinhluan{
+		font-size: 12pt;
+		margin-bottom: 0px;
+		color: #FFFFFF;
+	}
+	
+	.reviewsp{
+		font-size: 12pt;
+		font-weight: bold;
+		margin-left: 10px;
+	}
+	
+	.hrbl{
+		border: solid 1px #d3a13a;
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	
+	
+}
+/*----------------------*/
+
+
+/* ONLY TABLET */
+@media (min-width:768px) and (max-width:991px){
+	.bannerctspPK{
+/*		height: 700px;*/
+		width: 100%;
+	}
+	
+	.tabchitiet{
+		padding: 0px;
+	}
+	
+	#ctchitietspPK{
+		height: 125px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	
+	.titlesp{
+		font-size: 32pt;
+		text-align: left;
+		color: #d3a13a;
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
+	
+	#ctchitietspPK2{
+		height: 60px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	
+	.titlesp2{
+		font-size: 26pt;
+		text-align: center;
+		color: #d3a13a;
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
+	
+	#ctsanphamPK{
+		height: 1000px;
+	}
+	
+	.imgchitietnt{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	h4{
+		text-align: center;
+		display: block;
+		height: 25px;
+		padding-top: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		color: #d3a13a;
+	}
+	
+	#thongtinspgia{
+		height: 1000px;
+	}
+	
+	.thongtinsp{
+		height: 220px;
+		width: 220px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 0px;
+	}
+	
+	.titlectsp{
+		font-size: 14pt;
+		font-weight: bold;
+		text-align: left;
+		margin-left: 10px;
+		margin-top: 5px;
+	}
+	
+	h3{
+		font-weight: bold;
+		color: #d3a13a;
+		margin-left: 10px;
+		margin-top: 20px;
+	}
+	
+	#tongtienspPK{
+		height: 650px;
+	}
+	
+	.tongtien{
+		padding: 0px;
+	}
+	
+	.tttt{
+		font-size: 12pt;
+		font-weight: bold;
+		margin-left: 5px;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	
+	.tgia{
+		font-size: 18pt;
+		font-weight: bold;
+		color: #d3a13a;
+		margin-left: 5px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	
+	.ttbh{
+		font-size: 12pt;
+		font-weight: bold;
+		color: #FF0004;
+		margin-left: 5px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	
+	.btndnPK{
+		width: 95%;
+		height: 55px;
+		border: none;
+		background-color: #d3a13a;
+		border-radius: 3px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 5px;
+	}
+	
+	.noidungPKbtn{
+		font-size: 18pt;
+		text-align: center;
+		color: #FFFFFF;
+		margin: 0px;
+	}
+	
+	.btnsdtPK{
+		width: 95%;
+		height: 70px;
+		border: none;
+		background-color: #d3a13a;
+		border-radius: 3px;
+		margin-top: 10px;
+		margin-left: 5px;
+	}
+	
+	.slg{
+		font-size: 9pt;
+		color: #FFFFFF;
+		margin: 0px;
+		text-align: left;
+	}
+	
+	.tabctspPK{
+	  	overflow: hidden;
+	}
+
+	.tabctspPK button{
+	  	float: left;
+	  	border: none;
+	  	outline: none;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		padding-right: 16px;
+		padding-left: 16px;
+	  	transition: all ease 0.5s;
+		background-color: #f1f1f1;
+	}
+
+	.tabctspPK button:hover{
+	  	background-color: #d3a13a;
+		color: #FFFFFF;
+		transition: all ease 0.5s;
+	}
+
+	.tabctspPK button.active {
+	  	background-color: #ccc;
+		transition: all ease 0.5s;
+	}
+	
+	.tabchitiet {
+	  	display: none;
+	}
+	
+	.khungbinhluan{
+		height: 700px;
+		width: 100%;
+	}
+	
+	.binhluanPK{
+		font-size: 14px;
+		text-align: left;
+		margin-left: 10px;
+		font-weight: bold;
+		margin-top: 20px;
+	}
+	
+	.textbinhluan{
+		font-size: 16pt;
+		height: 60px;
+		padding-left: 5px;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: solid 2px;
+		border-radius: 3px;
+	}
+	
+	.btnbinhluan{
+		height: 30px;
+		width: 15%;
+		float: right;
+		display: block;
+		border-radius: 3px;
+		border: none;
+		background-color: #d3a13a;
+	}
+	
+	.ttbinhluan{
+		font-size: 12pt;
+		margin-bottom: 0px;
+		color: #FFFFFF;
+	}
+	
+	.reviewsp{
+		font-size: 12pt;
+		font-weight: bold;
+		margin-left: 10px;
+	}
+	
+	.hrbl{
+		border: solid 1px #d3a13a;
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+
+	
+}
+/*------------------------*/
+
+
+/* ONLY MOBILE */
+@media (max-width:767px){
+	.bannerctspPK{
+		width: 100%;
+	}
+	
+	.tabchitiet{
+		padding: 0px;
+	}
+	
+	#ctchitietspPK{
+		height: 100px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	
+	.titlesp{
+		font-size: 24pt;
+		text-align: left;
+		color: #d3a13a;
+		margin-bottom: 0px;
+	}
+	
+	#ctchitietspPK2{
+		height: 40px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+	
+	.titlesp2{
+		font-size: 21pt;
+		text-align: center;
+		color: #d3a13a;
+		margin-bottom: 0px;
+	}
+	
+	#ctsanphamPK{
+		height: 880px;
+	}
+	
+	.imgchitietnt{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	h4{
+		font-size: 14pt;
+		text-align: center;
+		display: block;
+		height: 45px;
+		padding-top: 4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		color: #d3a13a;
+	}
+	
+	#thongtinspgia{
+		height: 880px;
+	}
+	
+	.thongtinsp{
+		height: 182.4px;
+		width: 182.4px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 0px;
+	}
+	
+	.titlectsp{
+		font-size: 14pt;
+		font-weight: bold;
+		text-align: left;
+	}
+	
+	h3{
+		font-size: 14pt;
+		font-weight: bold;
+		color: #d3a13a;
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	
+	#tongtienspPK{
+		height: 600px;
+	}
+	
+	.tongtien{
+		padding: 0px;
+	}
+	
+	.tttt{
+		font-size: 12pt;
+		font-weight: bold;
+		margin-left: 5px;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	
+	.tgia{
+		font-size: 16pt;
+		font-weight: bold;
+		color: #d3a13a;
+		margin-left: 5px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	
+	.ttbh{
+		font-size: 12pt;
+		font-weight: bold;
+		color: #FF0004;
+		margin-left: 5px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	
+	.btndnPK{
+		width: 100%;
+		height: 55px;
+		border: none;
+		background-color: #d3a13a;
+		border-radius: 3px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	.noidungPKbtn{
+		font-size: 18pt;
+		text-align: center;
+		color: #FFFFFF;
+		margin: 0px;
+	}
+	
+	.btnsdtPK{
+		width: 100%;
+		height: 80px;
+		border: none;
+		background-color: #d3a13a;
+		border-radius: 3px;
+		margin-top: 10px;
+	}
+	
+	.slg{
+		font-size: 12pt;
+		color: #FFFFFF;
+		margin: 0px;
+		text-align: center;
+	}
+	
+	.tabctspPK{
+	  	overflow: hidden;
+	}
+
+	.tabctspPK button{
+	  	float: left;
+	  	border: none;
+	  	outline: none;
+		padding-top: 14px;
+		padding-bottom: 14px;
+	  	transition: all ease 0.5s;
+		background-color: #f1f1f1;
+	}
+
+	.tabctspPK button:hover{
+	  	background-color: #d3a13a;
+		color: #FFFFFF;
+		transition: all ease 0.5s;
+	}
+
+	.tabctspPK button.active {
+	  	background-color: #ccc;
+		transition: all ease 0.5s;
+	}
+	
+	.tabchitiet {
+	  	display: none;
+	}
+	
+	.khungbinhluan{
+		height: 700px;
+		width: 100%;
+	}
+	
+	.binhluanPK{
+		font-size: 14px;
+		text-align: left;
+		margin-left: 10px;
+		font-weight: bold;
+		margin-top: 20px;
+	}
+	
+	.textbinhluan{
+		font-size: 14pt;
+		height: 60px;
+		padding-left: 5px;
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: solid 2px;
+		border-radius: 3px;
+	}
+	
+	.btnbinhluan{
+		height: 30px;
+		width: 25%;
+		float: right;
+		display: block;
+		border-radius: 3px;
+		border: none;
+		background-color: #d3a13a;
+	}
+	
+	.ttbinhluan{
+		font-size: 12pt;
+		margin-bottom: 0px;
+		color: #FFFFFF;
+	}
+	
+	.reviewsp{
+		font-size: 12pt;
+		font-weight: bold;
+	}
+	
+	.hrbl{
+		border: solid 1px #d3a13a;
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	
+}

@@ -1,0 +1,893 @@
+@charset "UTF-8";
+/* CSS Chung */
+
+.iconsmxs a,.iconsmxs2 a{
+    font-size: 30px;
+    color:#D2A13A;
+    text-decoration: none;
+}
+
+.iconsmxs a:hover{
+    color:#D2A13A;
+}
+
+.iconsmxs,.iconsmxs2{
+    text-align: right;
+    padding-top: 10px;
+}
+
+.iconsmxs2{
+    text-align: left;
+}
+
+.tensp{
+    font-size: 20px;
+    color:#979797;
+}
+
+.giasp{
+    font-size: 23px;
+}
+
+.iconsearch,.iconcart{
+    color: black;
+    font-size: 25px;
+    transition: all ease .5s;
+}
+
+.threebtn{
+    width: 290px;
+    position: absolute;
+	z-index: 998;
+	opacity: 0;
+	transition: all ease .5s;
+    margin-top: 220px;
+}
+
+.productbox{
+    transition: all ease .5s;
+}
+
+.productbox:hover .threebtn{
+    opacity: 1;
+    transition: all ease .5s;
+}
+
+
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background:#D2A13A;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+}
+
+.circle:hover{
+    background-color: #D2A13A;
+}
+
+.iconsearch:hover, .iconcart:hover{
+    text-decoration: none;
+    color: white;
+    transition: all ease .5s;
+}
+
+/* Navi */
+
+
+
+.logo{
+    height: 40px;
+}
+
+#navi{
+	padding-top: 10px;
+}
+
+#searchbox{
+	padding-top: 10px;
+}
+
+#hovervechungtoi:hover{
+	cursor: pointer;
+}
+
+#menuxoxuong ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#menuxoxuong ul li{
+    display: block;
+}
+
+#menuxoxuong ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    display:block;
+    padding-top: 5px;
+    transition: all ease .3s;
+    border-bottom: solid .5pt #000000;
+}
+
+#menuxoxuong ul li a:hover{
+    color:#EFB85D;
+	transition: all ease .3s;
+}
+
+
+#blackscreen{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.0);
+	position: fixed;
+	z-index: 1001;
+	}
+#blackscreenforthreeline,#blackscreenforsearchfillsmxs{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	z-index: 1001;
+	}
+
+
+/*smxsnavi*/
+
+#smxsnavi ul{
+   list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#smxsnavi ul li{
+    display: block;
+}
+
+#smxsnavi ul li a{
+    color: white;
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#navi ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#navi ul li{
+	display: block;
+	float: left;
+}
+
+#navibg{
+	margin-top: 30px;
+}
+
+#navi ul li a{
+	text-decoration: none;
+	color: black;
+	display: block;
+	margin-right: 20px;
+	margin-top: 10px;
+	font-size: 15px;
+	transition: all ease .3s;
+	font-weight: 600;
+}
+
+#navi ul li a:hover{
+	color:#EFB85D;
+	transition: all ease .3s;
+}
+
+/*Threeline sm xs*/
+#threelineicon{
+    padding-top: 0px;
+}
+#threelineicon a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#searchfill{
+	background-color: rgba(0,0,0,0.00);
+	padding-left: 3px;
+	border: none;
+	border-bottom: solid 1pt #000000;
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+
+#searchfillsmxs{
+    background-color: rgba(0,0,0,0.00);
+	padding-left: 3px;
+	border: none;
+	border-bottom: solid 1pt white;
+	font-size: 15px;
+	margin-top: 5px;
+    color: white;
+}
+
+#searchfillsmxsproductpage{
+    background-color: rgba(0,0,0,0.00);
+	padding-left: 3px;
+	border: none;
+	border-bottom: solid 1pt black;
+	font-size: 15px;
+	margin-top: 5px;
+    color: black;
+}
+
+#alignsearchfillsmxs{
+    text-align: center;
+    position: absolute;
+    z-index: 1002;
+}
+
+#alignsearchfillsmxsproductpage{
+    text-align: center;
+}
+
+.searchbtn{
+	background-color: rgba(0,0,0,0.00);
+	border: none;
+	font-size: 15px;
+	margin-top: 5px;
+	margin-left: -26px;
+	color: black;
+}
+
+.usericon,.carticon{
+	color: black;
+	margin-left: 5px;
+}
+
+
+
+#searchboxsmxs{
+    padding: 0px;
+}
+#searchboxsmxs a{
+    display: block;
+    float: right;
+    padding-right: 5px;
+}
+
+/*Carousel*/
+.item img{
+ 	width: 100%;
+	height: auto;
+	}
+.carousel-caption{
+	top: 20%;
+}
+
+/*Mua Ngay Btn*/
+
+.muangaybtn{
+	color:#727272;
+	background-color: rgba(0,0,0,0.00);
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: solid 1.5pt #ADADAD;
+}
+
+.muangaybtn:hover{
+	color: black;
+	border: solid 1.5pt black;
+}
+
+
+.menutag{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.menutag span{
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    color:#D2A13A;
+}
+
+/*Footer*/
+#footer{
+	background-color:#F2F2F2;
+    margin-top: 30px;
+	padding: 0px;
+}
+
+#houzzlg{
+	margin-top: 15px;
+}
+
+#subcribe{
+    margin-top:30px;
+}
+
+#subcribenow{
+	color: black;
+	font-size: 13pt;
+    padding-left: 10px;
+}
+
+#subcribebar{
+	padding: 0px;
+    margin-top: 10px;
+}
+#emailbar{
+	border: solid 1pt #000000;
+	font-size: 14pt;
+	width:100%;
+	margin-top: 5px;
+	height: 30px;
+    padding-left: 10px;
+}
+
+#subbtn{
+	margin-top: 10px;
+}
+
+#subscribebtn{
+    border: none;
+    padding-top: 5px;
+    background-color:#D2A13A;
+    font-size: 20px;
+    width: 140px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 3px;
+    
+}
+
+#contact{
+ margin-top: 30px;   
+}
+#vct, #dk{
+	margin-top: 20px;
+}
+
+#contact ul{
+	list-style-type: none;
+}
+
+#contact ul li{
+	list-style-type: none;
+	color: black;
+	padding-top: 20px;
+	font-size: 12pt;
+}
+
+
+.gold{
+	color: #D3A13A;
+	font-size: 20pt;
+}
+
+#vct ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#vct ul li{
+	padding-top: 15px;
+	font-size: 12pt;
+}
+
+#vct ul li a{
+	text-decoration: none;
+	color: black;
+	
+}
+
+#dk ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#dk ul li{
+	padding-top: 15px;
+	font-size: 12pt;
+}
+
+#dk ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+#socialicon{
+	margin-top: 15px;
+}
+
+#socialicon{
+	margin-top: 30px;
+}
+
+#socialicon ul{
+	list-style-type: none;
+	
+}
+
+#socialicon ul li{
+	padding-top: 20px;
+	float: left;
+	font-size: 35pt;
+}
+
+#socialicon ul li a{
+	text-decoration: none;
+	color: black;
+	padding: 15px;
+	text-align: center;
+	
+}
+
+#socialicon ul li a:hover{
+	color:#D3A13A; 
+}
+
+#copyright{
+	color: black;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.hoverproduct:hover {
+    transform: scale(1.02,1.02);
+}
+
+
+/*Navi cac trang con lai tru trang home*/
+
+#naviproductpage{
+    height: auto;
+    padding-bottom: 10px;
+    position: sticky;
+    z-index: 1002;
+    top: 0px;
+    background-color: white;
+    border-bottom: 1px solid #ebebeb;
+	padding: 0px;
+}
+
+
+/* Only Lagre*/
+
+@media (min-width: 1200px){
+    .logonaviproduct{
+    padding-top: 0px;
+}
+#naviblock{
+	position: absolute;
+	z-index: 1002;
+	left: 50%;
+	margin-left: -585px;
+}
+    #searchfill{
+        width: 200px;
+    }
+    .usericon:hover, .carticon:hover{
+	color:#EFB85D;
+}
+    input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: black;
+	font-weight: 400;
+}
+    input:focus{
+	outline:0;
+    }
+}
+
+
+/* Only Medium */
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .threebtn{
+    width: 245px;
+    margin-top: 180px;
+    }
+    .logonaviproduct{
+    padding-top: 10px;
+    }
+#naviblock{
+	position: absolute;
+	z-index: 1002;
+	left: 50%;
+	margin-left: -485px;
+}
+    #searchfill{
+        width: 225px;
+    }
+    .usericon:hover, .carticon:hover{
+	color:#EFB85D;
+}
+    input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: black;
+	font-weight: 400;
+}
+    input:focus{
+	outline:0;
+    }
+
+	#footer{
+		padding: 0px;
+	}
+	
+	#contact{
+		margin-top: 15px;
+	}
+	
+	#contact ul li{
+		padding-top: 35px;
+		font-size: 12pt;
+	}
+	
+	#socialicon{
+		margin-top: 30px;
+	}
+
+	#socialicon ul{
+		list-style-type: none;
+	
+	}
+
+	#socialicon ul li{
+		padding-top: 20px;
+		float: left;
+		font-size: 25pt;
+	}
+
+	#socialicon ul li a{
+		text-decoration: none;
+		color: black;
+		padding: 12px;
+		text-align: center;
+	
+	}
+
+	#socialicon ul li a:hover{
+		color:#D3A13A; 
+	}
+
+	#copyright{
+		color: black;
+		text-align: center;
+		margin-top: 30px;
+	}
+}
+
+/* Only Tablet */
+
+@media (min-width: 768px) and (max-width: 991px){
+    #naviproductpage{
+        padding-top: 20px;
+    }
+#naviblock{
+	position: absolute;
+	z-index: 1002;
+	left: 50%;
+	margin-left: -375px;
+}
+    input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color:#D1D1D1;
+	font-weight: 400;
+}
+    input:focus{
+	outline:0;
+    }
+	
+
+	#houzzlg{
+		margin-top: 30px;
+	}
+
+	#subcribe{
+    	margin-top:50px;
+	}
+
+	#subcribenow{
+		font-size: 11pt;
+    	padding-left: 10px;
+	}
+
+	#subcribebar{
+		padding: 0px;
+    	margin-top: 10px;
+	}
+	#emailbar{
+		font-size: 10pt;
+		width:100%;
+		margin-top: 5px;
+		height: 30px;
+   	 	padding-left: 10px;
+	}
+
+	#subbtn{
+		margin-top: 10px;
+	}
+
+	#subscribebtn{
+    	padding-top: 5px;
+  		font-size: 15px;
+    	width: 100px;
+    	border-radius: 30px;
+    	padding-bottom: 5px;
+		margin-top: 3px;
+    
+	}
+
+	#contact{
+ 		margin-top: 10px;   
+	}
+	#vct, #dk{
+		margin-top: 30px;
+	}
+
+	#contact ul li{
+		padding-top: 27px;
+		font-size: 10pt;
+	}
+
+
+	.gold{
+		color: #D3A13A;
+		font-size: 15pt;
+	}
+
+	#vct ul li{
+		padding-top: 25px;
+		font-size: 11pt;
+	}
+
+	#dk ul li{
+		padding-top: 25px;
+		font-size: 11pt;
+	}
+
+	#socialicon{
+		margin-top: 15px;
+		padding: 0px;
+	}
+
+	#socialicon ul li{
+		float: left;
+		font-size: 23pt;
+	}
+
+	#socialicon ul li a{
+		padding: 6px;
+		text-align: center;
+	
+	}
+
+	#copyright{
+		color: black;
+		text-align: center;
+		margin-top: 30px;
+		font-size: 10pt;
+	}
+	
+}
+
+/* Only Mobile */
+
+@media (max-width: 767px){
+    #naviproductpage{
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+#naviblock{
+	position: absolute;
+	z-index: 1002;
+}
+    #navibg{
+	margin-top: 15px;
+}
+    #searchboxsmxs{
+    padding-top: 10px;
+}
+    #threelineicon{
+    padding-top: 5px;
+}
+    input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #D1D1D1;
+	font-weight: 400;
+}
+input:focus{
+	outline:0;
+}
+	
+	#houzzlg{
+		margin-top: 20px;
+	}
+
+	#subcribe{
+    	margin-top:20px;
+		text-align: center;
+	}
+
+	#subcribebar{
+		padding: 0px;
+    	margin-top: 10px;
+	}
+	#emailbar{
+		font-size: 10pt;
+		width:100%;
+		margin-top: 5px;
+		height: 30px;
+   	 	padding-left: 10px;
+	}
+
+	#subbtn{
+		margin-top: 10px;
+	}
+
+	#subscribebtn{
+    	padding-top: 5px;
+  		font-size: 15px;
+    	width: 100px;
+    	border-radius: 30px;
+    	padding-bottom: 5px;
+		margin-top: 3px;
+    
+	}
+
+	#contact{
+ 		margin-top: 10px;   
+	}
+	#vct, #dk{
+		margin-top: 30px;
+	}
+
+	#contact ul li{
+		padding-top: 15px;
+		font-size: 9pt;
+	}
+
+
+	.gold{
+		color: #D3A13A;
+		font-size: 13pt;
+	}
+
+	#vct ul li{
+		padding-top: 10px;
+		font-size: 8pt;
+		text-align: left;
+	}
+
+	#dk ul li{
+		padding-top: 10px;
+		font-size: 8pt;
+		text-align: left;
+	}
+
+	#socialicon{
+		margin-top: 10px;
+		padding: 0px;
+	}
+
+	#socialicon ul li{
+		float: left;
+		font-size: 15pt;
+	}
+
+	#socialicon ul li a{
+		padding: 6px;
+		text-align: center;
+	
+	}
+
+	#copyright{
+		color: black;
+		text-align: center;
+		margin-top: 30px;
+		font-size: 10pt;
+	}
+}
+
+@media(max-width: 380px){
+    #socialicon ul li{
+		float: left;
+		font-size: 12pt;
+	}
+    #subcribenow{
+		font-size: 10pt;
+    	padding-left: 10px;
+	}
+        #naviproductpage{
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+    #naviblock{
+	position: absolute;
+	z-index: 1002;
+    }
+    #threelineicon, #searchboxsmxs{
+        padding: 0px;
+        padding-top: 3px;
+    }
+    #searchboxsmxs a{
+        font-size: 15px;
+    }
+    #threelineicon{
+        padding-top: 0px;
+    }
+    #smxsnavi{
+        padding-left: 0px;
+    }
+    input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #D1D1D1;
+	font-weight: 400;
+}
+input:focus{
+	outline:0;
+}
+    #muangayxxs{
+        display: none;
+    }
+    .menutag span{
+      font-size: 25px;  
+    }
+    #subcribenow{
+		font-size: 10pt;
+	}
+	
+	#emailbar{
+		font-size: 10pt;
+		width:100%;
+		margin-top: 5px;
+		height: 25px;
+   	 	padding-left: 10px;
+	}
+	
+	#subscribebtn{
+  		font-size: 10px;
+    	width: 80px;
+    	border-radius: 30px;
+    	padding-bottom: 5px;
+		margin-top: 6px;
+    
+	}
+	
+	#socialicon ul li{
+		float: left;
+		font-size: 10pt;
+	}
+	
+	#socialicon ul li a{
+		padding: 3px;
+		text-align: center;
+	
+	}
+}
+
+	
+
+
+
+
+
+
+
+
+
+
+

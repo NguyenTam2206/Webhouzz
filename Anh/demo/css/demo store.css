@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+/*------HEADER-------*/
+#bannerstore{
+	background-image: url('../img/banner store.jpg');
+	height: 500px;
+	padding: 0px;
+}
+
+/*==============================================*/
+/*--------CONTENT-------*/
+#pagename{
+	text-align: center;
+	margin-top: 39px;
+	margin-bottom: 30px;
+	color: #d2a13a;
+}
+.line{
+	width: 200px;
+}
+.storeinfo{
+	display: block;
+	color: #000000;
+	text-decoration: none;
+}
+.storeinfo a{
+	color: #000000;
+	text-decoration: none;
+}
+.storeinfo a:hover{
+	color: #d2a13a;
+}
+#footer{
+	margin-top: 80px;
+}
+/*============ONLY MOBILE=============*/
+@media (max-width: 767px ){
+	#bannerstore{
+		background-image: url('../img/banner store mobile.jpg');
+		
+	}
+}

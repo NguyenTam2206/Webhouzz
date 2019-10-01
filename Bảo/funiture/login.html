@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/fontawesome/css/all.css"  rel="stylesheet">
+	<link href="css/login.css" rel="stylesheet">
+	<link href="css/csschung.css" rel="stylesheet">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+	
+	<!--jquery-->
+	  <script>
+		  $(document).ready(function(){
+				$('#blackscreen').hide();
+				$('#menuxoxuong ul').hide();
+				$('#hovervechungtoi').click(function(){
+					$('#menuxoxuong ul').slideToggle();
+					$('#blackscreen').fadeToggle();
+				})
+				$('#blackscreen').click(function(){
+					$('#menuxoxuong ul').slideUp();
+					$('#blackscreen').fadeOut();
+				})
+			})
+
+		  $(document).ready(function(){
+			  $('#smxsnavi ul').hide();
+			  $('#blackscreenforthreeline').hide();
+			  $('#threelineicon').click(function(){
+				  $('#alignsearchfillsmxsproductpage input').slideUp();
+				  $('#blackscreenforsearchfillsmxs').fadeOut();
+				  $('#smxsnavi ul').slideToggle();
+				  $('#blackscreenforthreeline').fadeToggle();
+			  })
+			  $('#blackscreenforthreeline').click(function(){
+				  $('#smxsnavi ul').slideUp();
+				  $('#blackscreenforthreeline').fadeOut();
+			  })
+		  })
+
+		  $(document).ready(function(){
+				$('#searchfillsmxs').keypress(function(event){
+					let hidebox = document.getElementById('searchfillsmxs');
+					var keycode = (event.keyCode ? event.keyCode : event.which);
+					if( keycode == '13') {
+						$('#blackscreenforsearchfillsmxs').fadeOut();
+						$('#searchfillsmxs').fadeOut();
+						hidebox.value = '';
+					}
+				})
+			})
+
+		   $(document).ready(function(){
+			  $('#alignsearchfillsmxsproductpage input').hide();
+			  $('#blackscreenforsearchfillsmxs').hide();
+			  $('#searchbtnsmxs').click(function(){
+				  $('#smxsnavi ul').slideUp();
+				  $('#blackscreenforthreeline').fadeOut();
+				  $('#alignsearchfillsmxsproductpage input').slideToggle();
+				  $('#blackscreenforsearchfillsmxs').fadeToggle();
+			  })
+			  $('#blackscreenforsearchfillsmxs').click(function(){
+				  $('#alignsearchfillsmxsproductpage input').slideUp();
+				  $('#blackscreenforsearchfillsmxs').fadeOut();
+			  })
+		  })
+
+		   $(document).ready(function(){
+				   $('.owl-carousel').owlCarousel({
+					   dots: false,
+					   loop: true,
+					   autoplay: true,
+					   autoplayTimeout: 3000,
+					   autoplayHoverPause: true,
+					   smartSpeed: 1000,
+					   responsiveClass: true,
+					   responsive:{
+						   0:{
+							   items: 2,
+						   },
+						   768:{
+							   items:2,
+						   },
+						   992:{
+							   items:4,
+						   }
+					   }
+				   });
+
+			   });
+			$(document).ready(function(){
+				$('#filterdetailxs').hide()
+				$('#filterbtnxs').click(function(){
+				 $('#filterdetailxs').slideToggle();  
+				})
+				$('#fltbtn').click(function(){
+					$('#filterdetailxs').slideUp();
+				})
+			})
+
+	  </script>
+	
+  </head>
+  <body>
+	
+	<!--HEADER-->
+	<div id="blackscreen"></div>
+	<div id="blackscreenforthreeline"></div>
+	<div id="blackscreenforsearchfillsmxs"></div>
+	<!-- Navi -->
+      <div class="container-fluid" id="naviproductpage">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-2 visible-lg
+							  col-md-2 visible-md logonaviproduct">
+                      <a href="../../Tâm/untitled folder/projectweb/index.html"><img src="img/logo.png" alt="logo" class="img-responsive"></a>
+                  </div>
+                  <!--Logo-->
+                  <div class="col-lg-7 visible-lg
+							  col-md-6 visible-md" id="navi">
+                      <ul>
+					  	<li><a id="hovervechungtoi">Về chúng tôi &nbsp;<i class="fas fa-angle-down"></i></a></li><!--Thêm menu xo xuong-->
+						<li><a href="../../Quang/ProjectSem2/phongkhach.html">Phòng khách</a></li>
+						<li><a href="phongan.html">Phòng ăn</a></li>
+						<li><a href="../../Anh/demo/Phòng ngủ.html">Phòng ngủ</a></li>
+					  </ul>
+                  </div><!--Navi lg md-->
+                  <div class="col-sm-1 visible-sm
+                              col-xs-1 visible-xs" id="threelineicon">
+                      <a><i class="fas fa-bars"></i></a>
+                  </div><!--threelineicon sm xs-->
+                   <div class="col-sm-2 col-sm-offset-4 visible-sm
+							  col-xs-4 col-xs-offset-3 visible-xs logo">
+                      <a href="index.html"><img src="img/logo.png" alt="logo" class="img-responsive"></a>
+                  </div>
+                  <!--Logo sm xs-->
+                  
+                  <div class="col-lg-3 visible-lg
+							  col-md-4 visible-md" id="searchbox">
+                      <input type="search" name="search" value="" placeholder="Tìm Kiếm" id="searchfill">
+					<a href=""><button class="searchbtn"><i class="fas fa-search"></i></button></a>
+					  <a href="login.html" class="usericon"><i class="fas fa-user"></i></a>
+					  <a href="" class="carticon"><i class="fas fa-shopping-cart"></i></a>
+                  </div><!--Search box, cart, dang nhap-->
+                   <div class="col-sm-5 visible-sm
+							  col-xs-4 visible-xs" id="searchboxsmxs">
+                       <a href="" class="carticon"><i class="fas fa-shopping-cart"></i></a>
+                       <a href="login.html" class="usericon"><i class="fas fa-user"></i></a>
+                       <a id="searchbtnsmxs"><label for="searchfillsmxs" class="searchbtn" style="margin-top: 0px;"><i class="fas fa-search"></i></label></a>
+                  </div><!--Search box, cart, dang nhap SM XS-->
+              </div>
+              <div class="row">
+                  <div class="col-sm-12 visible-sm
+                              col-xs-12 visible-xs" id="alignsearchfillsmxsproductpage">
+                      <input type="search" name="search" placeholder="Tìm Kiếm" id="searchfillsmxsproductpage">
+                  </div>
+              </div><!--Searchfill smxs-->
+              <div class="row" >
+				    <div class="col-sm-12 visible-sm
+				                col-xs-12 visible-xs" id="smxsnavi">
+					       <ul>
+						      <li><a href="../../Quang/ProjectSem2/phongkhach.html" style="color: black;">Phòng khách</a></li>
+						      <li><a href="phongan.html" style="color: black;">Phòng ăn</a></li>
+						      <li><a href="../../Anh/demo/Phòng ngủ.html" style="color: black;">Phòng ngủ</a></li>
+						      <li><a href="Chungtoilaai.html" style="color: black;">Chúng tôi là ai?</a></li>
+						      <li><a href="" style="color: black;">Tuyển dụng</a></li>
+                              <li><a href="../../Tâm/untitled folder/projectweb/hoptac.html" style="color: black;">Hợp tác kinh doanh</a></li>
+                              <li><a href="../../Anh/demo/Hệ thống cửa hàng.html" style="color: black;">Hệ thống cửa hàng</a></li>
+					       </ul>
+				    </div>
+			     </div><!--smxsnavi-->
+              <div class="row">
+                  <div class="col-lg-4 col-lg-offset-2 visible-lg
+                              col-md-4 col-md-offset-2 visible-md" id="menuxoxuong">
+                      <div class="row">
+                          <div class="col-lg-6
+                                      col-md-6">
+                               <ul>
+                                  <li><a href="Chungtoilaai.html">Chúng tôi là ai?</a></li>
+                                  <li><a href="">Tuyển dụng</a></li>
+                               </ul>
+                          </div>
+                          <div class="col-lg-6
+                                      col-md-6">
+                               <ul>
+                                  <li><a href="../../Tâm/untitled folder/projectweb/hoptac.html">Hợp tác kinh doanh</a></li>
+                                  <li><a href="../../Anh/demo/Hệ thống cửa hàng.html">Hệ thống cửa hàng</a></li>
+                               </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div><!--end header-->
+	
+	
+	<!--body-->
+	
+	<div class="container-fluid" id="loginbg">
+		<div class="container">
+			
+			<div class="col-lg-4 col-lg-offset-4
+						col-md-4 col-md-offset-4
+						col-sm-6 col-sm-offset-3
+						col-xs-10 col-xs-offset-1" id="loginbox">
+			
+				<div class="row">
+					<h1 id="login"><b><center>ĐĂNG NHẬP</center></b></h1><br>
+				</div>
+				
+					<div class="row">
+						
+						<div class="col-lg-12
+									col-md-12
+									col-sm-12" id="name">
+					
+							<span id="username"><b>Tên đăng nhập</b></span>
+						
+								<div class="col-lg-12
+											col-md-12
+											col-sm-12" id="namehere">
+									<span id="usericon"><i class="fas fa-user"></i></span>
+									&nbsp<input type="text" name="name" value="" id="nameinput" placeholder="hãy gõ tên người dùng ...">
+							
+								</div>
+						
+						</div>
+						
+					</div>
+				
+
+					<div class="row">
+						
+						<div class="col-lg-12
+									col-md-12
+									col-sm-12" id="pass">
+						
+							<span id="password"><b>Mật khẩu</b></span>
+							
+								<div class="col-lg-12
+											col-md-12
+											col-sm-12" id="passhere">
+									<span id="passicon"><i class="fas fa-unlock-alt"></i></span>
+									&nbsp<input type="text" name="pass" value="" id="passinput" placeholder="hãy gõ mật khẩu ...">
+							
+								</div>
+						
+						</div>
+						
+					</div>
+					
+					
+					<div class="row">
+						<a href><h3 id="forgot">Quên mật khẩu ?</h3></a>
+					</div>
+					
+					
+					
+					<div class="row">
+						
+						<div class="col-lg-10
+									col-md-10
+									col-sm-10" id="loginbar">
+						
+							<a href=""><button id="loginbtn"><center><b>Đăng nhập</b></center></button></a>
+						
+						</div>
+						
+						<div class="col-lg-10
+									col-md-10
+									col-sm-10" id="registerbar">
+							<a href=""><button id="register"><b>Chưa có tài khoản ? Đăng ký tại đây</b></button></a>	
+						</div>
+						
+					</div>
+					
+					<div class="row">
+						
+						<h2 id="orwith"><center>Hoặc đăng nhập với</center></h2>
+						
+					</div>
+					
+					<div class="row">
+						
+						<div class="col-lg-10 col-lg-offset-1
+									col-md-10 col-md-offset-1
+									col-sm-10 col-sm-offset-1" id="socialicon1">
+							
+							<ul>
+								<li><a href=""><span><i class="fab fa-facebook-square"></i></span></a></li>
+						
+								<li><a href=""><span><i class="fab fa-instagram"></i></span></a></li>
+						
+								<li><a href=""><span><i class="fab fa-twitter-square"></i></span></a></li>
+						
+								<li><a href=""><span><i class="fab fa-youtube-square"></i></span></a></li>
+							</ul>
+							
+						</div>
+						
+					</div>
+					
+				
+				</div>
+			
+			
+		</div>
+		
+	</div>
+	
+<!--Footer-->
+        <div class="container-fluid" id="footer">
+		    <div class="container">
+			    <div class="row">	
+				    <div class="col-lg-4 col-lg-offset-0
+				    			col-md-4 col-md-offset-0
+				    			col-sm-4 col-sm-offset-0
+				    			col-xs-6 col-xs-offset-3" id="houzzlg">
+					    <a href="../../Tâm/untitled folder/projectweb/index.html"><img src="img/houzzlogo.png" alt="logo" class="img-responsive"></a>
+				    </div>
+				    <div class="col-lg-7 col-lg-offset-1
+				    			col-md-7 col-md-offset-1
+								col-sm-7 col-sm-offset-1
+								col-xs-12" id="subcribe">
+					    <span id="subcribenow">Đăng ký để nhận thông tin sớm nhất</span>
+						<div class="col-lg-8
+									col-md-8
+									col-sm-8
+									col-xs-8" id="subcribebar">
+							<input type="text" name="email" value="" id="emailbar" placeholder="Email...">
+						</div>
+						<div class="col-lg-4
+									col-md-4
+									col-sm-4
+									col-xs-4" id="subbtn">
+							<a href=""><button id="subscribebtn">Đăng ký</button></a>
+						</div>
+				    </div>
+			    </div>
+			
+			<div class="row">
+				
+				<div class="col-lg-5
+							col-md-5
+							col-sm-5
+							col-xs-12" id="contact">
+					<div class="row">
+						<ul>
+							<li><i class="far fa-envelope"></i><span class="ft">&nbsp &nbsp Email: info@houzz.com</span></li>
+							<li><i class="fas fa-phone-volume"></i><span>&nbsp &nbsp &nbspĐiện thoại: (028) 3245 7367</span></li>
+							<li><i class="fas fa-map-marked-alt"></i><span>&nbsp &nbsp Địa chỉ: 165 Nguyễn Văn A, phường B, quận C, TP.HCM</span></li>
+							<li><i class="far fa-clock"></i><span>&nbsp &nbsp Giờ làm việc: 7:30 - 11:30 ; 13:00 - 18:00 mỗi ngày</span></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-lg-offset-1
+							col-md-3 col-md-offset-1
+							col-sm-3 col-sm-offset-1
+							col-xs-6" id="vct">
+					<span class="gold"><b>Về chúng tôi</b></span>
+					<ul>
+						<li><a href="Chungtoilaai.html">Chúng tôi là ai ?</a></li>
+						<li><a href="">Tuyển dụng</a></li>
+						<li><a href="../../Tâm/untitled folder/projectweb/hoptac.html">Hợp tác kinh doanh</a></li>
+						<li><a href="../../Anh/demo/Hệ thống cửa hàng.html">Hệ thống cửa hàng</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-lg-3
+							col-md-3
+							col-sm-3
+							col-xs-6" id="dk">
+					<span class="gold"><b>Điều khoản</b></span>
+					<ul>
+						<li><a href="chinhsachriengtu.html">Chính sách riêng tư</a></li>
+						<li><a href="../../Quang/ProjectSem2/Vanchuyengiaohang.html">Vận chuyển</a></li>
+						<li><a href="../../Anh/demo/Hỗ trợ khách hàng.html">Hỗ trợ khách hàng</a></li>
+						<li><a href="">Bán lẻ</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-4
+							col-md-4 col-md-offset-4
+							col-sm-4 col-sm-offset-4
+							col-xs-6 col-xs-offset-3" id="socialicon">
+					<ul>
+						<li><a href=""><span><i class="fab fa-facebook-square"></i></span></a></li>
+						
+						<li><a href=""><span><i class="fab fa-instagram"></i></span></a></li>
+						
+						<li><a href=""><span><i class="fab fa-twitter-square"></i></span></a></li>
+						
+						<li><a href=""><span><i class="fab fa-youtube-square"></i></span></a></li>
+					</ul>
+				</div>
+				
+				
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3
+							col-md-6 col-md-offset-3
+							col-sm-6 col-sm-offset-3" id="copyright">
+					<span>© 2019 Bản quyền thuộc công ty Houzz</span>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+  </body>
+</html>

@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+/*--------HEADER------------*/
+
+
+/*-----------CONTENT-----------*/
+#product{
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+#product-name{
+	padding-left: 0px;
+}
+#review{
+	padding-left: 0px;
+}
+#product-img{
+	height: auto;
+}
+.changeimg{
+	padding-left: 35px;
+}
+#stars{
+	color:#FFDD00;
+	padding-left: 0px;
+}
+#price{
+	color: #FF0004;
+	margin-bottom: 20px;
+	padding-left: 0px;
+}
+.iconsl{
+	display: block;
+	height: 60px;
+	text-decoration: none;
+	color: #000000;
+	background-color: #DBDBDB;
+	text-align: center;
+	margin-top: 20px;
+}
+.iconsl a{
+	color: #000000;
+	text-decoration: none;
+}
+.iconsl a:hover{
+	color: #000000;
+}
+#so-luong{
+	height: 60px;
+	background-color: #DBDBDB;
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 15px;
+	font-size: 16pt;
+}
+#productinfo{
+	padding-left: 0px;
+}
+.addbtn{
+	display: block; 
+	width: 100%;
+	height: 60px;
+	background-color: #d2a13a;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	padding-top: 15px;
+	margin-top: 20px;
+	font-size: 14pt;
+}
+.addbtn:hover{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#product-stasus{
+	margin-top: 40px;
+	white-space: pre-line;
+	padding-left: 0px;
+}
+
+.giatiendt{
+	color: #d2a13a;
+}
+/*=============DESCRIPTION========*/
+#mo-ta{
+	margin-top: 100px;
+}
+#pagename{
+	margin-top: 100px;
+}
+/*
+.owl-carousel owl-theme{
+	width:auto !important;
+}
+*/
+/*============DICH-VU===========*/
+#dich-vu{
+	height: 160px;
+	background-color: #DBDBDB;
+	margin-top: 100px;
+	padding-top: 40px;
+	align-content: center;
+}
+.icondv{
+	color: #d3a13a;
+	font-size: 30pt;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.textmota{
+	font-size: 14pt;
+}
+
+.texth4{
+	font-size: 18pt;
+}
+/*=======FOOTER========*/
+/*============ONLY MEDIUM=============*/
+@media (min-width: 992px) and (max-width: 1199px){
+	.iconsl{
+		font-size: 9pt;
+	}
+	.addbtn{
+		padding-top: 20px;
+		font-size: 11pt;
+	}
+	#dich-vu{
+		margin-top: 20px;
+	}
+}
+
+/*============ONLY TABLET============*/
+@media (min-width: 768px) and (max-width: 991px){
+	#khunggoiy{
+		height: 5500px;
+	}
+	
+	#dich-vu{
+		margin-top: 20px;
+	}
+}
+
+/*============ONLY MOBILE=============*/
+@media (max-width: 767px ){
+	#giohangbtn{
+		padding-left: 5px;
+		padding-right: 0px;
+	}
+	.addbtn{
+		padding: 10px;
+		font-size: 12pt;
+	}
+	
+	#khunggoiy{
+		height: 550px;
+	}
+	
+	#dich-vu{
+	display: none;
+}
+	
+}
+
+
+
+
+

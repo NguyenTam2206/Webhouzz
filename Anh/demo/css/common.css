@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+/*--------------FOOTER-------------*/
+#footer{
+	background-color:#000000;
+}
+
+#houzzlg, #subcribe{
+	margin-top: 30px;
+}
+
+#subcribenow{
+	color: #FFFFFF;
+	font-size: 13pt;
+	
+}
+
+#subcribebar{
+	padding: 0px;
+}
+#emailbar{
+	padding-top: 2px;
+	border:3pt solid #D3A13A;
+	
+	font-size: 14pt;
+	width:100%;
+	margin-top: 20px;
+	height: 40px;
+}
+
+#subbtn{
+	padding: 0px;
+}
+
+#subscribebtn{
+	padding-top: 2px;
+	padding-left:0px ;
+	padding-right: 0px;
+	font-size: 14pt;
+	width:100%;
+	margin-top: 0px;
+	height: 40px;
+}
+
+#contact, #vct, #dk{
+	margin-top: 30px;
+}
+
+#contact ul{
+	list-style-type: none;
+}
+
+#contact ul li{
+	list-style-type: none;
+	color: #FFFFFF;
+	padding-top: 40px;
+	font-size: 12pt;
+}
+
+
+.gold{
+	color: #D3A13A;
+	font-size: 20pt;
+}
+
+#vct ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#vct ul li{
+	padding-top: 35px;
+	font-size: 13pt;
+}
+
+#vct ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	
+}
+
+#dk ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#dk ul li{
+	padding-top: 35px;
+	font-size: 13pt;
+}
+
+#dk ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#socialicon{
+	margin-top: 30px;
+}
+
+#socialicon{
+	margin-top: 30px;
+}
+
+#socialicon ul{
+	list-style-type: none;
+	
+}
+
+#socialicon ul li{
+	padding-top: 20px;
+	float: left;
+	font-size: 35pt;
+}
+
+#socialicon ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 15px;
+	text-align: center;
+	
+}
+
+#socialicon ul li a:hover{
+	color:#D3A13A; 
+}
+
+#copyright{
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 30px;
+}

@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+#privacy{
+	background-image:url(../img/Office5.png);
+	height: 1000px;
+	background-size: cover;
+}
+
+#tieude{
+	color: #d2a13a;
+	font-size: 30pt;
+	text-align: center;
+}
+
+.text{
+	color: #FFFFFF;
+	font-size: 13pt;
+}
+
+#detail{
+	text-align: center;
+	color:#FFFFFF;
+	font-size: 15pt;
+	
+}
+
+#detail a:hover{
+	color: #d2a13a;
+	text-decoration: none;
+}
+
+/* Only Medium */
+
+@media (min-width: 992px) and (max-width: 1199px){
+	
+	#privacy{
+		height: 1000px;
+	}
+
+	#tieude{
+		color: #d2a13a;
+		font-size: 25pt;
+	}
+
+	.text{
+		font-size: 12pt;
+	}
+
+	#detail{
+		font-size: 14pt;
+	
+	}
+
+	#detail a:hover{
+		color: #d2a13a;
+		text-decoration: none;
+	}
+	
+}
+
+/* Only Tablet */
+
+@media (min-width: 768px) and (max-width: 991px){
+	
+	#privacy{
+		height: 1000px;
+	}
+
+	#tieude{
+		color: #d2a13a;
+		font-size: 20pt;
+	}
+
+	.text{
+		font-size: 10pt;
+	}
+
+	#detail{
+		font-size: 12pt;
+	
+	}
+
+	#detail a:hover{
+		color: #d2a13a;
+		text-decoration: none;
+	}
+	
+}
+
+/* Only Mobile */
+
+@media (max-width: 767px){
+	
+	#privacy{
+		height: 1000px;
+	}
+
+	#tieude{
+		color: #d2a13a;
+		font-size: 15pt;
+	}
+
+	.text{
+		font-size: 8pt;
+	}
+
+	#detail{
+		font-size: 10pt;
+	
+	}
+
+	#detail a:hover{
+		color: #d2a13a;
+		text-decoration: none;
+	}
+	
+}

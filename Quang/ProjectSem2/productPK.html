@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Bàn PK</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/csschung.css" rel="stylesheet">
+  	<link href="css/productpage.css" rel="stylesheet">
+  	<link href="css/fontawesome-free-5.8.2-web/css/all.css" rel="stylesheet">
+	<!-- jQuery  --> 
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+	<!--font-->
+  	<link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Charm&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+ 	<!--jquery-->
+  <script>
+      $(document).ready(function(){
+            $('#blackscreen').hide();
+			$('#menuxoxuong ul').hide();
+			$('#hovervechungtoi').click(function(){
+				$('#menuxoxuong ul').slideToggle();
+                $('#blackscreen').fadeToggle();
+			})
+			$('#blackscreen').click(function(){
+				$('#menuxoxuong ul').slideUp();
+				$('#blackscreen').fadeOut();
+			})
+		})
+      
+      $(document).ready(function(){
+          $('#smxsnavi ul').hide();
+          $('#blackscreenforthreeline').hide();
+          $('#threelineicon').click(function(){
+              $('#alignsearchfillsmxsproductpage input').slideUp();
+              $('#blackscreenforsearchfillsmxs').fadeOut();
+              $('#smxsnavi ul').slideToggle();
+              $('#blackscreenforthreeline').fadeToggle();
+          })
+          $('#blackscreenforthreeline').click(function(){
+              $('#smxsnavi ul').slideUp();
+              $('#blackscreenforthreeline').fadeOut();
+          })
+      })
+      
+      $(document).ready(function(){
+			$('#searchfillsmxs').keypress(function(event){
+				let hidebox = document.getElementById('searchfillsmxs');
+				var keycode = (event.keyCode ? event.keyCode : event.which);
+				if( keycode == '13') {
+                    $('#blackscreenforsearchfillsmxs').fadeOut();
+					$('#searchfillsmxs').fadeOut();
+					hidebox.value = '';
+				}
+			})
+		})
+      
+       $(document).ready(function(){
+          $('#alignsearchfillsmxsproductpage input').hide();
+          $('#blackscreenforsearchfillsmxs').hide();
+          $('#searchbtnsmxs').click(function(){
+              $('#smxsnavi ul').slideUp();
+              $('#blackscreenforthreeline').fadeOut();
+              $('#alignsearchfillsmxsproductpage input').slideToggle();
+              $('#blackscreenforsearchfillsmxs').fadeToggle();
+          })
+          $('#blackscreenforsearchfillsmxs').click(function(){
+              $('#alignsearchfillsmxsproductpage input').slideUp();
+              $('#blackscreenforsearchfillsmxs').fadeOut();
+          })
+      })
+      
+       $(document).ready(function(){
+			   $('.owl-carousel').owlCarousel({
+				   dots: false,
+				   loop: true,
+				   autoplay: true,
+				   autoplayTimeout: 3000,
+				   autoplayHoverPause: true,
+				   smartSpeed: 1000,
+				   responsiveClass: true,
+				   responsive:{
+					   0:{
+						   items: 2,
+					   },
+					   768:{
+						   items:2,
+					   },
+					   992:{
+						   items:4,
+					   }
+				   }
+			   });
+			    
+		   });
+        $(document).ready(function(){
+            $('#filterdetailxs').hide()
+            $('#filterbtnxs').click(function(){
+             $('#filterdetailxs').slideToggle();  
+            })
+            $('#fltbtn').click(function(){
+                $('#filterdetailxs').slideUp();
+            })
+        })
+      
+  </script>
+  </head>
+  <body>
+      <div id="blackscreen"></div>
+      <div id="blackscreenforthreeline"></div>
+      <div id="blackscreenforsearchfillsmxs"></div>
+	<!-- Navi -->
+      <div class="container-fluid" id="naviproductpage">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-2 visible-lg
+							  col-md-2 visible-md logonaviproduct">
+                      <a href="../../Tâm/untitled folder/projectweb/index.html"><img src="img/logo.png" alt="logo" class="img-responsive"></a>
+                  </div>
+                  <!--Logo-->
+                  <div class="col-lg-7 visible-lg
+							  col-md-6 visible-md" id="navi">
+                      <ul>
+					  	<li><a id="hovervechungtoi">Về chúng tôi &nbsp;<i class="fas fa-angle-down"></i></a></li><!--Thêm menu xo xuong-->
+						<li><a href="phongkhach.html">Phòng khách</a></li>
+						<li><a href="../../Bảo/funiture/phongan.html">Phòng ăn</a></li>
+						<li><a href="../../Anh/demo/Phòng ngủ.html">Phòng ngủ</a></li>
+					  </ul>
+                  </div><!--Navi lg md-->
+                  <div class="col-sm-1 visible-sm
+                              col-xs-1 visible-xs" id="threelineicon">
+                      <a><i class="fas fa-bars"></i></a>
+                  </div><!--threelineicon sm xs-->
+                   <div class="col-sm-2 col-sm-offset-4 visible-sm
+							  col-xs-4 col-xs-offset-3 visible-xs logo">
+                      <a href="../../Tâm/untitled folder/projectweb/index.html"><img src="img/logo.png" alt="logo" class="img-responsive"></a>
+                  </div>
+                  <!--Logo sm xs-->
+                  
+                  <div class="col-lg-3 visible-lg
+							  col-md-4 visible-md" id="searchbox">
+                      <input type="search" name="search" value="" placeholder="Tìm Kiếm" id="searchfill">
+					<a href=""><button class="searchbtn"><i class="fas fa-search"></i></button></a>
+					  <a href="../../Bảo/funiture/login.html" class="usericon"><i class="fas fa-user"></i></a>
+					  <a href="" class="carticon"><i class="fas fa-shopping-cart"></i></a>
+                  </div><!--Search box, cart, dang nhap-->
+                   <div class="col-sm-5 visible-sm
+							  col-xs-4 visible-xs" id="searchboxsmxs">
+                       <a href="" class="carticon"><i class="fas fa-shopping-cart"></i></a>
+                       <a href="../../Bảo/funiture/login.html" class="usericon"><i class="fas fa-user"></i></a>
+                       <a id="searchbtnsmxs"><label for="searchfillsmxs" class="searchbtn" style="margin-top: 0px;"><i class="fas fa-search"></i></label></a>
+                  </div><!--Search box, cart, dang nhap SM XS-->
+              </div>
+              <div class="row">
+                  <div class="col-sm-12 visible-sm
+                              col-xs-12 visible-xs" id="alignsearchfillsmxsproductpage">
+                      <input type="search" name="search" placeholder="Tìm Kiếm" id="searchfillsmxsproductpage">
+                  </div>
+              </div><!--Searchfill smxs-->
+              <div class="row" >
+				    <div class="col-sm-12 visible-sm
+				                col-xs-12 visible-xs" id="smxsnavi">
+					       <ul>
+						      <li><a href="phongkhach.html" style="color: black;">Phòng khách</a></li>
+						      <li><a href="../../Bảo/funiture/phongan.html" style="color: black;">Phòng ăn</a></li>
+						      <li><a href="../../Anh/demo/Phòng ngủ.html" style="color: black;">Phòng ngủ</a></li>
+						      <li><a href="../../Bảo/funiture/Chungtoilaai.html" style="color: black;">Chúng tôi là ai?</a></li>
+						      <li><a href="" style="color: black;">Tuyển dụng</a></li>
+                              <li><a href="../../Tâm/untitled folder/projectweb/hoptac.html" style="color: black;">Hợp tác kinh doanh</a></li>
+                              <li><a href="../../Anh/demo/Hệ thống cửa hàng.html" style="color: black;">Hệ thống cửa hàng</a></li>
+					       </ul>
+				    </div>
+			     </div><!--smxsnavi-->
+              <div class="row">
+                  <div class="col-lg-4 col-lg-offset-2 visible-lg
+                              col-md-4 col-md-offset-2 visible-md" id="menuxoxuong">
+                      <div class="row">
+                          <div class="col-lg-6
+                                      col-md-6">
+                               <ul>
+                                  <li><a href="../../Bảo/funiture/Chungtoilaai.html">Chúng tôi là ai?</a></li>
+                                  <li><a href="">Tuyển dụng</a></li>
+                               </ul>
+                          </div>
+                          <div class="col-lg-6
+                                      col-md-6">
+                               <ul>
+                                  <li><a href="../../Tâm/untitled folder/projectweb/hoptac.html">Hợp tác kinh doanh</a></li>
+                                  <li><a href="../../Anh/demo/Hệ thống cửa hàng.html">Hệ thống cửa hàng</a></li>
+                               </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Banner -->
+      <div class="container-fluid" id="bannerproduct">
+      </div>
+      
+      <!--Content-->
+      <div class="container">
+          <div class="row content">
+              <div class="col-lg-3
+							col-md-3
+							col-sm-4
+							hidden-xs" id="filter">
+                        <span class="filtervalue">Khu vực</span>
+						<ul style="margin-top: 10px; margin-bottom:20px;">
+                          <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck" name="check" />
+                              <label for="squaredcheck"><span>Tất cả</span></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck1" name="check"/>
+                              <label for="squaredcheck1"><span>Phòng ăn</span></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck2" name="check" checked/>
+                              <label for="squaredcheck2"><span>Phòng khách</span></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck3" name="check" />
+                              <label for="squaredcheck3"><span>Phòng ngủ</span></label>
+                            </div>
+                          </li>
+                        </ul>
+                        <span class="filtervalue">Sản phẩm</span>
+						<ul style="margin-top: 10px; margin-bottom:20px;">
+                          <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck4" name="check" />
+                              <label for="squaredcheck4"><span>Tất cả</span></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck5" name="check" />
+                              <label for="squaredcheck5"><span>Mới</span></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck6" name="check" />
+                              <label for="squaredcheck6"><span>Khuyến mãi</span></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck7" name="check" />
+                              <label for="squaredcheck7"><span>Sofa</span></label>
+                            </div>
+                          </li>
+                           <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck8" name="check"/>
+                              <label for="squaredcheck8"><span>Ghế</span></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck9" name="check" checked />
+                              <label for="squaredcheck9"><span>Bàn</span></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck10" name="check" />
+                              <label for="squaredcheck10"><span>Tủ</span></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck11" name="check" />
+                              <label for="squaredcheck11"><span>Đèn</span></label>
+                            </div>
+                          </li>
+                           <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck12" name="check" />
+                              <label for="squaredcheck12"><span>Giường</span></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck13" name="check" />
+                              <label for="squaredcheck13"><span>Trang trí khác</span></label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="squaredcheck">
+                              <input type="checkbox" value="None" id="squaredcheck14" name="check" />
+                              <label for="squaredcheck14"><span>Gói sản phẩm</span></label>
+                            </div>
+                          </li>
+                        </ul>
+                        <span class="filtervalue">Giá tiền</span><div class="clearfix"></div>
+                        <p style="margin-top:10px;"><img src="img/thanhtruot.png" alt="thanhtruot" class="img-responsive"></p><div class="clearfix"></div>
+                        <p>1.000.000 - 20.000.000</p><div class="clearfix"></div>
+                        <button class="filterbtn">Filter</button>
+							
+				</div>
+              <!--XS filter, xs content-->
+              <div class="col-xs-12 filter visible-xs">
+                  
+                      <div class="row" id="filterbg">
+                          <a id="filterbtnxs"><div class="col-xs-12" style="font-size: 15px;">
+                              Filter &nbsp;<i class="fas fa-sort-down"></i>
+                          </div></a>
+                          <div class="col-xs-12" id="filterdetailxs">
+                              <div class="row">
+                                  <div class="col-xs-12" style="margin-top:15px; margin-bottom: 10px;"><span class="filtervaluexs">Khu vực</span></div>
+                                  
+                                      <ul class="filterxsul">
+                                          <div class="col-xs-3" style="padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredcheckx" name="check" />
+                                              <label for="squaredcheckx"><span>Tất cả</span></label>
+                                            </div>
+                                          </li>
+                                          </div>
+                                          <div class="col-xs-3" style="padding-left: 5px; padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredcheckx1" name="check"/>
+                                              <label for="squaredcheckx1"><span>P. Ăn</span></label>
+                                            </div>
+                                          </li>
+                                          </div>
+                                          <div class="col-xs-3" style="padding-left: 5px; padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredcheckx2" name="check" checked />
+                                              <label for="squaredcheckx2"><span>P. Khách</span></label>
+                                            </div>
+                                          </li>
+                                          </div>
+                                          <div class="col-xs-3" style="padding-left: 5px; padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredcheckx3" name="check" />
+                                              <label for="squaredcheckx3"><span>P. Ngủ</span></label>
+                                            </div>
+                                          </li> 
+                                          </div>
+                                      </ul>
+                                  
+                                  <div class="col-xs-12" style="margin-top:15px; margin-bottom: 10px;"><span class="filtervaluexs">Sản phẩm</span></div>
+                                      <ul class="filterxsul">
+                                          <div class="col-xs-3" style="padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredchecka" name="check"/>
+                                              <label for="squaredchecka"><span>Tất cả</span></label>
+                                            </div>
+                                          </li>
+                                          </div>
+                                          <div class="col-xs-3" style="padding-left: 5px; padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredchecka1" name="check"/>
+                                              <label for="squaredchecka1"><span>Mới</span></label>
+                                            </div>
+                                          </li>
+                                          </div>
+                                          <div class="col-xs-3" style="padding-left: 5px; padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredchecka2" name="check" />
+                                              <label for="squaredchecka2"><span>Sale</span></label>
+                                            </div>
+                                          </li>
+                                          </div>
+                                          <div class="col-xs-3" style="padding-left: 5px; padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredchecka3" name="check" />
+                                              <label for="squaredchecka3"><span>Sofa</span></label>
+                                            </div>
+                                          </li> 
+                                          </div>
+                                      </ul>
+                                      <ul class="filterxsul">
+                                          <div class="col-xs-3" style="padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredcheckb" name="check" />
+                                              <label for="squaredcheckb"><span>Ghế</span></label>
+                                            </div>
+                                          </li>
+                                          </div>
+                                          <div class="col-xs-3" style="padding-left: 5px; padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredcheckb1" name="check" checked/>
+                                              <label for="squaredcheckb1"><span>Bàn</span></label>
+                                            </div>
+                                          </li>
+                                          </div>
+                                          <div class="col-xs-3" style="padding-left: 5px; padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredcheckb2" name="check" />
+                                              <label for="squaredcheckb2"><span>Giường</span></label>
+                                            </div>
+                                          </li>
+                                          </div>
+                                          <div class="col-xs-3" style="padding-left: 5px; padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredcheckb3" name="check" />
+                                              <label for="squaredcheckb3"><span>Đèn</span></label>
+                                            </div>
+                                          </li> 
+                                          </div>
+                                      </ul>
+                                      <ul class="filterxsul">
+                                          <div class="col-xs-3" style="padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredcheckc" name="check" />
+                                              <label for="squaredcheckc"><span>Tủ</span></label>
+                                            </div>
+                                          </li>
+                                          </div>
+                                          <div class="col-xs-3" style="padding-left: 5px; padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredcheckc1" name="check" />
+                                              <label for="squaredcheckc1"><span>Trang trí</span></label>
+                                            </div>
+                                          </li>
+                                          </div>
+                                          <div class="col-xs-6" style="padding-left: 5px; padding-right: 5px;">
+                                          <li>
+                                            <div class="squaredcheck">
+                                              <input type="checkbox" value="None" id="squaredcheckc2" name="check" />
+                                              <label for="squaredcheckc2"><span> Gói sản phẩm</span></label>
+                                            </div>
+                                          </li>
+                                          </div>
+                                      </ul>
+                              </div>
+                              <div class="row" style="margin-top: 20px;">
+                                  <div class="col-xs-7">
+                                      <div class="row">
+                                          <div class="col-xs-12"><img src="imgs/thanhtruot.png" alt="thanhtruot" class="img-responsive"></div>
+                                          <div class="col-xs-12" style="text-align:left;">1.000.000 - 20.000.000</div>
+                                      </div>
+                                  </div>
+                                  <div class="col-xs-5"><button class="filterbtnxs" id="fltbtn">Filter</button></div>
+                              </div>
+                          </div>
+                      </div>
+              </div>
+              <div class="col-xs-6 visible-xs"> 8 of 100 items</div>
+              <div class="col-xs-6 visible-xs" style="text-align: right;"> &nbsp;<span style="color: #C4AC2F;">Default</span>&nbsp;&nbsp;<i class="fas fa-sort-down"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-list"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-th-large"></i></div>
+              <div class="clearfix visible-xs"></div>
+              <div class="visible-xs" style="margin-top: 20px;">
+                  <div class="col-xs-6 productbox">
+                     <a href="detailsdenPK.html"><img src="img/ProductPK1.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-xs-12 tensp" style="text-align: center; font-size: 14px;">
+Bàn Cainsville</div>
+                        <div class="col-xs-12 giasp" style="text-align: center; font-size: 14px;">1.700.000 VND</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-xs-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-6 productbox">
+                     <a href=""><img src="img/ProductPK2.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-xs-12 tensp" style="text-align: center; font-size: 14px;">
+Bàn Devito</div>
+                        <div class="col-xs-12 giasp" style="text-align: center; font-size: 14px;">2.500.000 VND</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-xs-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-6 productbox">
+                     <a href=""><img src="img/ProductPK3.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-xs-12 tensp" style="text-align: center; font-size: 14px;">Bàn Dorian</div>
+                        <div class="col-xs-12 giasp" style="text-align: center; font-size: 14px;">1.300.000</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-xs-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-6 productbox">
+                     <a href=""><img src="img/ProductPK4.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-xs-12 tensp" style="text-align: center; font-size: 14px;">Bàn Spla</div>
+                        <div class="col-xs-12 giasp" style="text-align: center; font-size: 14px;">2.000.000</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-xs-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-6 productbox">
+                     <a href=""><img src="img/ProductPK5.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-xs-12 tensp" style="text-align: center; font-size: 14px;">Bàn Payton</div>
+                        <div class="col-xs-12 giasp" style="text-align: center; font-size: 14px;">3.200.000</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-xs-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-6 productbox">
+                     <a href=""><img src="img/ProductPK6.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-xs-12 tensp" style="text-align: center; font-size: 14px;">Bàn Tyronza</div>
+                        <div class="col-xs-12 giasp" style="text-align: center; font-size: 14px;">1.900.000</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-xs-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-6 productbox">
+                     <a href=""><img src="img/ProductPk7.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-xs-12 tensp" style="text-align: center; font-size: 14px;">Bàn Wasser</div>
+                        <div class="col-xs-12 giasp" style="text-align: center; font-size: 14px;">700.000</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-xs-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-6 productbox">
+                     <a href=""><img src="img/ProductPK8.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-xs-12 tensp" style="text-align: center; font-size: 14px;">Bàn Zara</div>
+                        <div class="col-xs-12 giasp" style="text-align: center; font-size: 14px;">5.100.000</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-xs-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12 sangtrangicon" style="font-size: 23px;">
+                      <i class="fas fa-angle-left"></i> <span style="color:#FFC88D;">1</span><span style="color: #D1D1D1;"> 2 3 4</span> <i class="fas fa-angle-right"></i> 
+                  </div>
+              </div>
+              <!--XS filter, xs content-->
+              
+                  
+              <div class="col-lg-9
+                          col-md-9
+                          col-sm-8 hidden-xs">
+                  <div class="row" style="margin-bottom:20px;">
+                      <div class="col-lg-4
+                                  col-md-4
+                                  col-sm-4"> 8 of 100 products</div>
+                      <div class="col-lg-4 col-lg-offset-4
+                                  col-md-4 col-md-offset-4
+                                  col-sm-6 col-sm-offset-2" style="text-align: right;">Sort by &nbsp;<span style="color: #C4AC2F;">Default</span>&nbsp;&nbsp;<i class="fas fa-sort-down"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-list"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-th-large"></i></div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="row">
+                      <div class="col-lg-4
+                                  col-md-4
+                                  col-sm-6 productbox">
+                          <a href=""><img src="img/ProductPK1.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 tensp" style="text-align: center; font-size: 14px;">Bàn Cainsville</div>
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 giasp" style="text-align: center; font-size: 14px;">1.700.000 VND</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="col-lg-4
+                                  col-md-4
+                                  col-sm-6 productbox">
+                          <a href=""><img src="img/ProductPK2.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 tensp" style="text-align: center; font-size: 14px;">Bàn Devito</div>
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 giasp" style="text-align: center; font-size: 14px;">2.500.000 VND</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="col-lg-4
+                                  col-md-4
+                                  col-sm-6 productbox">
+                          <a href=""><img src="img/ProductPK3.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 tensp" style="text-align: center; font-size: 14px;">Bàn Dorian</div>
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 giasp" style="text-align: center; font-size: 14px;">1.300.000 VND</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="col-lg-4
+                                  col-md-4
+                                  col-sm-6 productbox">
+                          <a href=""><img src="img/ProductPK4.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 tensp" style="text-align: center; font-size: 14px;">Bàn Spla</div>
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 giasp" style="text-align: center; font-size: 14px;">2.000.000</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="col-lg-4
+                                  col-md-4
+                                  col-sm-6 productbox">
+                          <a href=""><img src="img/ProductPK8.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 tensp" style="text-align: center; font-size: 14px;">Bàn Zara</div>
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 giasp" style="text-align: center; font-size: 14px;">5.100.000 VND</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="col-lg-4
+                                  col-md-4
+                                  col-sm-6 productbox">
+                          <a href=""><img src="img/ProductPK5.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 tensp" style="text-align: center; font-size: 14px;">Bàn Payton</div>
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 giasp" style="text-align: center; font-size: 14px;">3.200.000 VND</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="col-lg-4
+                                  col-md-4
+                                  col-sm-6 productbox">
+                          <a href=""><img src="img/ProductPK6.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 tensp" style="text-align: center; font-size: 14px;">Bàn Tyronza</div>
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 giasp" style="text-align: center; font-size: 14px;">1.900.000 VND</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="col-lg-4
+                                  col-md-4
+                                  col-sm-6 productbox">
+                          <a href=""><img src="img/ProductPk7.jpg" alt="1" class="img-responsive"></a>
+                      <div class="row">
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 tensp" style="text-align: center; font-size: 14px;">Bàn Wasser</div>
+                        <div class="col-lg-12
+                                    col-md-12
+                                    col-sm-12 giasp" style="text-align: center; font-size: 14px;">700.000 VND</div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-right: 5px;">
+                              <a href="" class="muangayxsbtn">Mua Ngay</a>
+                          </div>
+                          <div class="col-lg-6
+                                      col-md-6
+                                      col-sm-6" style="padding-left: 5px;">
+                              <a href="" class="muangayxsbtn">Vào Giỏ</a>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-lg-12
+                              col-md-12
+                              col-sm-12 sangtrangicon" style="font-size: 18px;"><i class="fas fa-angle-left"></i> <span style="color:#FFC88D;">1</span><span style="color: #D1D1D1;"> 2 3 4</span> <i class="fas fa-angle-right"></i> </div>
+              </div>
+          </div>
+      </div>
+<!--Footer-->
+        <div class="container-fluid" id="footer">
+		    <div class="container">
+			    <div class="row">	
+				    <div class="col-lg-4 col-lg-offset-0
+				    			col-md-4 col-md-offset-0
+				    			col-sm-4 col-sm-offset-0
+				    			col-xs-6 col-xs-offset-3" id="houzzlg">
+					    <a href="../../Tâm/untitled folder/projectweb/index.html"><img src="img/logo.png" alt="logo" class="img-responsive"></a>
+				    </div>
+				    <div class="col-lg-7 col-lg-offset-1
+				    			col-md-7 col-md-offset-1
+								col-sm-7 col-sm-offset-1
+								col-xs-12" id="subcribe">
+					    <span id="subcribenow">Đăng ký để nhận thông tin sớm nhất</span>
+						<div class="col-lg-8
+									col-md-8
+									col-sm-8
+									col-xs-8" id="subcribebar">
+							<input type="text" name="email" value="" id="emailbar" placeholder="Email...">
+						</div>
+						<div class="col-lg-4
+									col-md-4
+									col-sm-4
+									col-xs-4" id="subbtn">
+							<a href=""><button id="subscribebtn">Đăng ký</button></a>
+						</div>
+				    </div>
+			    </div>
+			
+			<div class="row">
+				
+				<div class="col-lg-5
+							col-md-5
+							col-sm-5
+							col-xs-12" id="contact">
+					<div class="row">
+						<ul>
+							<li><i class="far fa-envelope"></i><span class="ft">&nbsp &nbsp Email: info@houzz.com</span></li>
+							<li><i class="fas fa-phone-volume"></i><span>&nbsp &nbsp &nbspĐiện thoại: (028) 3245 7367</span></li>
+							<li><i class="fas fa-map-marked-alt"></i><span>&nbsp &nbsp Địa chỉ: 165 Nguyễn Văn A, phường B, quận C, TP.HCM</span></li>
+							<li><i class="far fa-clock"></i><span>&nbsp &nbsp Giờ làm việc: 7:30 - 11:30 ; 13:00 - 18:00 mỗi ngày</span></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-lg-offset-1
+							col-md-3 col-md-offset-1
+							col-sm-3 col-sm-offset-1
+							col-xs-6" id="vct">
+					<span class="gold"><b>Về chúng tôi</b></span>
+					<ul>
+						<li><a href="../../Bảo/funiture/Chungtoilaai.html">Chúng tôi là ai ?</a></li>
+						<li><a href="">Tuyển dụng</a></li>
+						<li><a href="../../Tâm/untitled folder/projectweb/hoptac.html">Hợp tác kinh doanh</a></li>
+						<li><a href="../../Anh/demo/Hệ thống cửa hàng.html">Hệ thống cửa hàng</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-lg-3
+							col-md-3
+							col-sm-3
+							col-xs-6" id="dk">
+					<span class="gold"><b>Điều khoản</b></span>
+					<ul>
+						<li><a href="../../Bảo/funiture/chinhsachriengtu.html">Chính sách riêng tư</a></li>
+						<li><a href="Vanchuyengiaohang.html">Vận chuyển</a></li>
+						<li><a href="../../Anh/demo/Hỗ trợ khách hàng.html">Hỗ trợ khách hàng</a></li>
+						<li><a href="">Bán lẻ</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-4
+							col-md-4 col-md-offset-4
+							col-sm-4 col-sm-offset-4
+							col-xs-6 col-xs-offset-3" id="socialicon">
+					<ul>
+						<li><a href=""><span><i class="fab fa-facebook-square"></i></span></a></li>
+						
+						<li><a href=""><span><i class="fab fa-instagram"></i></span></a></li>
+						
+						<li><a href=""><span><i class="fab fa-twitter-square"></i></span></a></li>
+						
+						<li><a href=""><span><i class="fab fa-youtube-square"></i></span></a></li>
+					</ul>
+				</div>
+				
+				
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3
+							col-md-6 col-md-offset-3
+							col-sm-6 col-sm-offset-3" id="copyright">
+					<span>© 2019 Bản quyền thuộc công ty Houzz</span>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+  </body>
+</html>

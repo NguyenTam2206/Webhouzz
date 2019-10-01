@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+/*-------BANNER--------*/
+#banner{
+	height: 500px;
+	background-image: url('../img/BANNER CONTACT.jpg');
+}
+#bannercontent{
+	color: #000000;
+	margin-top: 150px;
+	margin-left: 500px;
+}
+/*--------FORM---------*/
+#content{
+	background-color: #DBDBDB;
+	height: 180px;
+	padding-top: 40px;
+}
+.contacticon{
+	text-align: center;
+	font-size: 30pt;
+	color: #F8393C;
+}
+#form{
+	height: 700px;
+	background-image: url('../img/BANNER FORM.jpg');
+}
+#formsignup{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+#name{
+	border: none;
+	height: 35px;
+	width: 80%;
+	padding-left: 10px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+#email{
+	border: none;
+	height: 35px;
+	width: 80%;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+#subject{
+	border: none;
+	height: 35px;
+	width: 80%;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+#com{
+	border: none;
+	resize: none;
+	width: 80%;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+input[type=submit]{
+	background-color: #000000;
+	border: none;
+	color: #d2a13a;
+	height: 40px;
+	width: 80%;
+}
+
+/*============ONLY MEDIUM=============*/
+@media (min-width: 992px) and (max-width: 1199px){
+	#form{
+		height: 700px;
+	}
+}
+/*============ONLY TABLET============*/
+@media (min-width: 768px) and (max-width: 991px){
+	
+}
+
+/*============ONLY MOBILE=============*/
+@media (max-width: 767px ){
+	#banner{
+		background-image: url('../img/banner contact mobile.jpg');
+	}
+	#content{
+		height: 0px;
+		padding: 0px;
+	}
+	#name{
+		width: 100%;
+	}
+	#email{
+		width: 100%;
+	}
+	#subject{
+		width: 100%;
+	}
+	#com{
+		width: 100%;
+	}
+	input[type=submit]{
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+

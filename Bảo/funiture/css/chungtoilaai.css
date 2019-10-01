@@ -1,0 +1,348 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#tieude{
+	margin-top: 310px;
+	float: right;
+	font-size: 30pt;
+	color: #d2a13a;
+	text-align: center;
+	padding: none;
+}
+
+
+#text{
+	font-size: 13pt;
+	margin-bottom: 50px;
+	margin-top: 20px;
+	float: right;
+	padding: none;
+	text-align: right;
+	color: #FFFFFF;
+}
+
+#bg1{
+	background-image: url(../img/Office2.png);
+	height: 600px;
+	background-size: cover;
+}
+
+#bg2{
+	background-color:#333333;
+	height: 310px;
+	background-size: cover;
+	margin-top: 40px;
+	border-top-left-radius: 30px;
+}
+
+#tieude1{
+	font-size: 25pt;
+	color: #d2a13a;
+	margin-top: 20px;
+	text-align: left;
+}
+
+
+#content2{
+	padding: 0px;
+}
+
+.text1{
+	font-size: 15pt;
+	margin-top: 10px;
+	color: #FFFFFF;
+	text-align: left;
+	padding: none;
+	justify-content: center;
+}
+
+#pic1{
+	padding: 0px;
+}
+
+#tieude2{
+	font-size: 25pt;
+	color: #d2a13a;
+	text-align:right;
+	margin-top: 100px;
+	
+}
+
+#text2, #text21{
+	font-size: 13pt;
+	color:#FFFFFF;
+	text-align: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 0px;
+	margin-top: 10px;
+}
+
+#pic2{
+	padding: 0px;
+}
+
+#bg3{
+	background-color: #6D6D6D;
+	margin-top: 30px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius:30px;
+	height: 240px;
+}
+
+#bg4{
+	background-color:#4B4B4B;
+ 	margin-top: 30px;
+	border-top-right-radius: 30px;
+}
+
+#tieude4{
+	font-size: 25pt;
+	color: #d2a13a;
+	margin-top: 20px;
+	text-align: right;
+}
+
+#pic3{
+	padding: 0px;
+	height: 280px;
+}
+
+/* Only Medium */
+
+@media (min-width: 992px) and (max-width: 1199px){
+	
+	#tieude{
+		margin-top: 210px;
+		font-size: 20pt;
+	}
+
+
+	#text{
+		font-size: 11pt;
+		margin-bottom: 30px;
+		margin-top: 10px;
+	}
+
+	#bg1{
+		background-image: url(../img/Office2.png);
+		height: 430px;
+	}
+
+	#bg2{
+		height: 258px;
+		background-size: cover;
+	}
+
+	#tieude1{
+		font-size: 20pt;
+		margin-top: 15px;
+	}
+
+	.text1{
+		font-size: 13pt;
+		margin-top: 10px;
+		color: #FFFFFF;
+		text-align: left;
+		padding: none;
+	}
+
+	#tieude2{
+		font-size: 25pt;
+		margin-top: 80px;	
+	}
+
+	#bg3{
+		height: 200px;
+	}
+	
+	#text2, #text21{
+		font-size: 10pt;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 0px;
+		margin-top: 10px;
+	}
+
+	#bg4{
+		height: 233px;
+	}
+	
+	#tieude4{
+		font-size: 25pt;
+		margin-top: 20px;
+	}
+
+	#pic3{
+		padding: 0px;
+		height: 233px;
+	}
+	
+}
+
+/* Only Tablet */
+
+@media (min-width: 768px) and (max-width: 991px){
+	
+	#tieude{
+		margin-top: 150px;
+		font-size: 13pt;
+		margin-right: 50px;
+	}
+
+
+	#text{
+		font-size: 9pt;
+		margin-bottom: 30px;
+		margin-top: 10px;
+		margin-right: 50px;
+	}
+
+	#bg1{
+		background-image: url(../img/Office2.png);
+		height: 310px;
+	}
+
+	#bg2{
+		height: 199px;
+		background-size: cover;
+	}
+
+	#tieude1{
+		font-size: 15pt;
+		margin-top: 10px;
+	}
+
+	.text1{
+		font-size: 10pt;
+		margin-top: 2px;
+		color: #FFFFFF;
+		text-align: left;
+		padding: none;
+	}
+
+	#tieude2{
+		font-size: 15pt;
+		margin-top: 50px;	
+	}
+
+	#bg3{
+		height: 156px;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+	
+	#text2, #text21{
+		font-size: 8pt;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 0px;
+		margin-top: 10px;
+	}
+
+	#bg4{
+		height: 180px;
+	}
+	
+	#tieude4{
+		font-size: 15pt;
+		margin-top: 20px;
+	}
+
+	#pic3{
+		padding: 0px;
+		height: 180px;
+	}
+	
+}
+
+/* Only Mobile */
+
+@media (max-width: 767px){
+	
+	#tieude{
+		margin-top: 100px;
+		font-size: 8pt;
+		text-align: center;
+		padding: 0px;
+		float:none;
+	}
+
+
+	#text{
+		font-size: 8pt;
+		margin-bottom: 30px;
+		margin-top: 10px;
+		text-align:left;
+	}
+
+	#bg1{
+		background-image: url(../img/Office2.png);
+		height: 250px;
+	}
+
+	#bg2{
+		height: 199px;
+		background-size: cover;
+	}
+
+	#tieude1{
+		font-size: 10pt;
+		margin-top: 10px;
+	}
+
+	.text1{
+		font-size: 8pt;
+		margin-top: 2px;
+		color: #FFFFFF;
+		text-align: left;
+		padding: none;
+	}
+
+	
+	
+	#tieude2{
+		font-size: 10pt;
+		margin-top: 50px;	
+	}
+	
+	#tieude21{
+		font-size: 10pt;
+		color: #d2a13a;
+		float: right;
+		padding-right: 15px;
+	}
+	
+	#bg3{
+		height: 180px;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		margin-top: 150px;
+	}
+	
+	#text2, #text21{
+		font-size: 8pt;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 0px;
+		margin-top: 2px;
+	}
+
+	#bg4{
+		height: 370px;
+		border-bottom-right-radius: 15px;
+	}
+	
+	#tieude4{
+		font-size: 10pt;
+		margin-top: 80px;
+		text-align: center;
+	}
+
+	#pic3{
+		padding: 0px;
+		height: 180px;
+	}
+	
+}
