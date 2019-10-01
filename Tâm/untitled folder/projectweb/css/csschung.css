@@ -460,7 +460,7 @@
     padding: 0px;  /*nhac bao tu anh them cai nay*/
     height: auto;
     padding-bottom: 10px;
-    position: sticky;
+    position: fixed;
     z-index: 1002;
     top: 0px;
     background-color: white;
