@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* PRoductpage */
+
+
+.muangayxsbtn {
+    color:rgba(210,161,58,1.00);
+    border: solid 1pt rgba(210,161,58,1.00);
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.muangayxsbtn:hover{
+    background-color:rgba(210,161,58,1.00);
+    color: black;
+    text-decoration: none;
+}
+
+.productbox{
+    margin-top: 50px;
+}
+
+.filtervaluexs{
+    font-size: 15px;
+}
+.filterxsul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.filterxsul li{
+    font-size: 14px;
+    margin-right: 13px;
+    display: block;
+    float: left;
+}
+
+#filterbtnxs{
+    text-decoration: none;
+    color: #D2A13A;
+}
+
+#filterbg{
+    background-color: white;
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+    margin-bottom:30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#bannerproduct{
+    background-image:url("../imgs/banner/mayer_450874_19e_g.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.sangtrangicon{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.filterbtn{
+	color:#727272;
+	background-color: rgba(0,0,0,0.00);
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: solid 1.5pt #ADADAD;
+    width: 145px;
+}
+.filterbtnxs{
+	color:#727272;
+	background-color: rgba(0,0,0,0.00);
+	font-size: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: solid 1.5pt #ADADAD;
+}
+
+.filterbtn:hover{
+	color: black;
+	border: solid 1.5pt black;
+}
+
+
+
+#filter{
+	display: block;
+	position: sticky;
+	z-index: 999;
+	top: 80px;
+}
+
+#filter ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.filtervalue{
+    font-size: 20px;
+    color:#D2A13A;
+}
+
+.productbox{
+}
+
+.content{
+    margin-top: 30px;
+}
+
+/* Only Mobile */
+
+@media (max-width: 767px){
+   .content{
+    margin-top: 0px;
+} 
+}
+@media(max-width: 380px){
+    .filterxsul li{
+    font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

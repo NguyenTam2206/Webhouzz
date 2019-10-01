@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* Hoptac page */
+
+#bannerhoptac{
+    background-image:url("../imgs/banner/bannerhoptac.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.aligncontent{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenthoptacpage {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+.hoptacbtn{
+	color:white;
+	background-color:#D2A13A;
+    border-radius: 20px;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    border: none;
+}
+
+
+#dkdvdt{
+    color: white;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+@media (max-width: 767px){
+    .contenthoptacpage{
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
